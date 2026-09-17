@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>RestoEnLigne - Promotions avec Countdowns</title><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#5e258d",
+        "primary-container": "#5e258d",
+        "on-primary": "#ffffff",
+        secondary: "#f05a28",
+        "secondary-container": "#f05a28",
+        "promo-urgent": "#D92D20",
+        "surface-canvas": "#FAF9FC",
+        "surface-card": "#FFFFFF",
+        "surface-container": "#f5ebf8",
+        "surface-container-low": "#faf0fe",
+        "surface-container-high": "#efe5f3",
+        "on-surface": "#1e1a23",
+        "on-surface-variant": "#4c4451",
+        "success-green": "#12B76A"
+      },
+      fontFamily: {
+        sans: ["Plus Jakarta Sans", "sans-serif"]
+      }
+    }
+  }
+}</script></head><body class="bg-surface-canvas font-sans text-on-surface antialiased">
+<!-- HEADER OFFICIEL RESTOENLIGNE -->
+<header class="fixed top-0 left-0 right-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-surface-container"><div class="h-20 max-w-[1280px] mx-auto px-4 lg:px-8 flex items-center justify-between gap-4"><div class="flex items-center gap-8"><a class="flex items-center group" href="#"><img alt="RestoEnLigne" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7f-FcKbGAKKwSgE9Aiyf3n2XTvj7MzeSqB-OrriGK51SNLAw5mokvaRRlBQ17uokNWAn724KbW1JYx5ATiDw52_WUCHizTOvLbsoMO6o-5jC16ZZN3hGPmtqCpr0WA7KtUxGmLjPZmIpMxgGwZMPZI3g4fMmC4zPHapHeMmc9ngxyphYzJtlOr2gW2s6_G-UTZ9BgjJTfRI_NQGfNnNv-mzT2S20aDXK1xWY2Rwa-lV2-RPGkutUaMEH2DbxwZdRwUeE"/></a><nav class="hidden lg:flex items-center gap-1"><a class="px-4 py-2 rounded-xl text-sm font-semibold text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#">Restaurants</a><a aria-current="page" class="px-4 py-2 bg-primary text-white font-bold rounded-xl shadow-sm" href="#">Promotions</a><a class="px-4 py-2 rounded-xl text-sm font-semibold text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#">Événements</a><a class="px-4 py-2 rounded-xl text-sm font-semibold text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#">Concours</a><a class="px-4 py-2 rounded-xl text-sm font-semibold text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#">Cartes-cadeaux</a></nav></div><div class="flex items-center gap-4"><div class="hidden sm:flex items-center bg-surface-container-low rounded-full p-1 border border-surface-container"><button class="px-3 py-0.5 rounded-full text-xs bg-white text-primary font-bold shadow-sm">FR</button><button class="px-3 py-0.5 rounded-full text-xs text-on-surface-variant hover:text-on-surface transition-colors">EN</button></div><button aria-label="Recherche" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container"><span class="material-symbols-outlined text-[22px]">search</span></button><a class="hidden md:inline-flex items-center text-sm text-primary font-bold hover:underline" href="#">Espace Resto</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white"><span class="material-symbols-outlined text-[18px]">person</span></div></div></div></header>
+<main class="w-full pt-24 pb-16 bg-surface-canvas"><div class="w-full max-w-[1280px] mx-auto px-4 lg:px-8 flex flex-col gap-10">
+<!-- SECTION HERO & CIBLAGE GÉO -->
+<section class="flex flex-col gap-4">
+<div class="flex flex-col max-w-3xl">
+<div class="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-purple-100 text-primary text-xs font-bold uppercase tracking-wider mb-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+      Offres en temps réel au Québec
+    </div>
+<h1 class="text-3xl lg:text-5xl font-extrabold text-on-surface tracking-tight leading-tight">
+      Les meilleures promotions de restaurants <span class="text-primary underline decoration-secondary decoration-4 underline-offset-4">près de chez toi</span>
+</h1>
+<p class="text-lg text-on-surface-variant mt-2">
+      Découvre les rabais, menus spéciaux et offres à durée limitée disponibles dans les restos de ta région.
+    </p>
+</div>
+<!-- Search Bar -->
+<div class="w-full bg-white rounded-2xl p-4 shadow-md flex flex-col gap-3 border border-purple-50">
+<div class="flex flex-col md:flex-row items-stretch md:items-center gap-3">
+<div class="relative flex-1 flex items-center bg-surface-container-low rounded-xl px-4 py-3">
+<span class="material-symbols-outlined text-primary text-[22px] mr-2">location_on</span>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="text-xs text-on-surface-variant uppercase font-semibold">Localisation cible</span>
+<input class="bg-transparent text-base text-on-surface font-bold focus:outline-none placeholder:text-gray-400" id="postalInput" type="text" value="Montréal, QC — H2X 1Y4"/>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-4 py-3 rounded-xl text-sm font-bold text-primary hover:bg-surface-container flex items-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">my_location</span>
+<span>Utiliser ma position</span>
+</button>
+<button class="px-6 py-3 rounded-xl text-base bg-secondary text-white font-bold shadow-sm hover:opacity-95 transition-all flex items-center justify-center gap-2" type="button">
+<span>Voir les offres</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between text-xs text-on-surface-variant pt-1 border-t border-gray-100">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Promotions sélectionnées près de <strong>Montréal — H2X 1Y4</strong> (Rayon : 10 km)</span>
+</div>
+<button class="text-primary font-bold hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">tune</span> Modifier le rayon
+      </button>
+</div>
+</div>
+<!-- Filtres chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 pt-2">
+<button class="px-4 py-1.5 rounded-full bg-primary text-white text-sm font-bold flex items-center gap-2 shadow-sm whitespace-nowrap">
+<span>Tous</span>
+<span class="px-1.5 py-0.2 text-xs rounded-full bg-white/20">48</span>
+</button>
+<button class="px-4 py-1.5 rounded-full bg-white text-on-surface hover:bg-surface-container text-sm font-semibold flex items-center gap-1.5 shadow-sm whitespace-nowrap">
+<span class="material-symbols-outlined text-[16px] text-secondary">local_fire_department</span>
+<span>Aujourd'hui</span>
+<span class="w-2 h-2 rounded-full bg-success-green"></span>
+</button>
+<button class="px-4 py-1.5 rounded-full bg-white text-on-surface hover:bg-surface-container text-sm font-semibold shadow-sm whitespace-nowrap">Cette semaine</button>
+<button class="px-4 py-1.5 rounded-full bg-white text-on-surface hover:bg-surface-container text-sm font-semibold shadow-sm whitespace-nowrap">2 pour 1</button>
+<button class="px-4 py-1.5 rounded-full bg-white text-on-surface hover:bg-surface-container text-sm font-semibold shadow-sm whitespace-nowrap">Moins de 20 $</button>
+<button class="px-4 py-1.5 rounded-full bg-white text-on-surface hover:bg-surface-container text-sm font-semibold shadow-sm whitespace-nowrap">Gratuités</button>
+<button class="px-4 py-1.5 rounded-full bg-white text-on-surface hover:bg-surface-container text-sm font-semibold shadow-sm whitespace-nowrap">Menus du midi</button>
+<button class="px-4 py-1.5 rounded-full bg-white text-primary hover:bg-surface-container text-sm font-bold shadow-sm whitespace-nowrap flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-yellow-500">stars</span> Exclusivité REL
+    </button>
+</div>
+</section>
+<!-- SECTION 1 : « À NE PAS MANQUER » (3 CARTES VEDETTES AVEC COUNTDOWNS NUMÉRIQUES EN TEMPS RÉEL) -->
+<section class="flex flex-col gap-4">
+<div class="flex items-end justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-secondary text-xs uppercase tracking-wider font-extrabold">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+        Sélection premium du chef
+      </div>
+<h2 class="text-2xl lg:text-3xl font-extrabold text-on-surface tracking-tight">
+        À ne pas manquer près de Montréal
+      </h2>
+</div>
+<span class="text-sm text-on-surface-variant font-medium">3 offres coup de cœur en vedette</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- VEDETTE 1: Kinton Ramen 2 pour 1 -->
+<article class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-gray-100 group">
+<div class="relative w-full aspect-video overflow-hidden">
+<img alt="Ramen Signature Kinton" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1 items-start">
+<span class="px-3 py-1 rounded-lg bg-secondary text-white text-xl font-extrabold tracking-tight shadow-md">2 POUR 1</span>
+<span class="px-2 py-0.5 rounded-md bg-primary text-white text-xs font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[13px]">star</span> Exclusivité REL
+          </span>
+</div>
+<button aria-label="Favori" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md text-gray-600 hover:text-red-500 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<!-- VRAI COUNTDOWN NUMÉRIQUE 1 -->
+<div class="absolute bottom-2.5 left-2.5 right-2.5 bg-gray-950/90 backdrop-blur-md rounded-xl px-3 py-1.5 flex items-center justify-between border border-white/10 shadow-lg">
+<div class="flex items-center gap-1.5 text-xs font-bold text-orange-400">
+<span class="material-symbols-outlined text-[16px] animate-pulse">timer</span>
+<span class="text-white text-[11px] font-semibold">Expire dans :</span>
+</div>
+<div class="flex items-center gap-1 font-mono font-bold text-xs text-white" data-countdown="94830" id="hero-cd-1">
+<span class="bg-gray-800 px-1.5 py-0.5 rounded text-orange-300 timer-d">01j</span> :
+            <span class="bg-gray-800 px-1.5 py-0.5 rounded text-orange-300 timer-h">02h</span> :
+            <span class="bg-gray-800 px-1.5 py-0.5 rounded text-orange-300 timer-m">20m</span> :
+            <span class="bg-secondary px-1.5 py-0.5 rounded text-white timer-s">30s</span>
+</div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between gap-4">
+<div>
+<div class="flex items-center justify-between text-xs font-semibold mb-1">
+<span class="text-gray-500">Restaurant Kinton Ramen</span>
+<span class="text-primary font-bold bg-purple-50 px-2 py-0.5 rounded-md">Plateau · 1,2 km</span>
+</div>
+<h3 class="text-lg font-extrabold text-on-surface group-hover:text-primary transition-colors">
+            Deux ramens Signature pour le prix d'un
+          </h3>
+<p class="text-sm text-on-surface-variant mt-1">
+            Valable sur les bols Shoyu, Miso et Piquant avec tout achat d'une boisson maison.
+          </p>
+</div>
+<div class="pt-2 flex items-center justify-between border-t border-gray-100">
+<div class="flex flex-col">
+<span class="text-xs text-gray-400 line-through">Valeur 39,90 $</span>
+<span class="text-lg text-secondary font-extrabold">19,95 $ <span class="text-xs text-gray-500 font-normal">total</span></span>
+</div>
+<button class="px-5 py-2.5 rounded-xl text-sm font-bold bg-secondary text-white hover:opacity-95 shadow-sm transition-all flex items-center gap-1">
+<span>Voir l'offre</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- VEDETTE 2: Le Coup Monté Menu Midi 14,95 $ -->
+<article class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-gray-100 group">
+<div class="relative w-full aspect-video overflow-hidden">
+<img alt="Bistro Le Coup Monté" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1 items-start">
+<span class="px-3 py-1 rounded-lg bg-primary text-white text-xl font-extrabold tracking-tight shadow-md">MIDI 14,95 $</span>
+<span class="px-2 py-0.5 rounded-md bg-white text-gray-800 text-xs font-bold shadow-sm">Val. 24 $ (-38%)</span>
+</div>
+<button aria-label="Favori" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md text-gray-600 hover:text-red-500 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<!-- VRAI COUNTDOWN NUMÉRIQUE 2 -->
+<div class="absolute bottom-2.5 left-2.5 right-2.5 bg-gray-950/90 backdrop-blur-md rounded-xl px-3 py-1.5 flex items-center justify-between border border-white/10 shadow-lg">
+<div class="flex items-center gap-1.5 text-xs font-bold text-yellow-400">
+<span class="material-symbols-outlined text-[16px] animate-spin">schedule</span>
+<span class="text-white text-[11px] font-semibold">Fin de session :</span>
+</div>
+<div class="flex items-center gap-1 font-mono font-bold text-xs text-white" data-countdown="67320" id="hero-cd-2">
+<span class="bg-gray-800 px-1.5 py-0.5 rounded text-yellow-300 timer-h">18h</span> :
+            <span class="bg-gray-800 px-1.5 py-0.5 rounded text-yellow-300 timer-m">42m</span> :
+            <span class="bg-primary px-1.5 py-0.5 rounded text-white timer-s">00s</span>
+</div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between gap-4">
+<div>
+<div class="flex items-center justify-between text-xs font-semibold mb-1">
+<span class="text-gray-500">Bistro Le Coup Monté</span>
+<span class="text-primary font-bold bg-purple-50 px-2 py-0.5 rounded-md">Montréal · 2,4 km</span>
+</div>
+<h3 class="text-lg font-extrabold text-on-surface group-hover:text-primary transition-colors">
+            Formule table d'hôte du midi 3 services
+          </h3>
+<p class="text-sm text-on-surface-variant mt-1">
+            Potage du moment, plat du chef et mignardise gourmande. Apportez votre vin !
+          </p>
+</div>
+<div class="pt-2 flex items-center justify-between border-t border-gray-100">
+<div class="flex flex-col">
+<span class="text-xs text-gray-400 line-through">Régulier 24,00 $</span>
+<span class="text-lg text-primary font-extrabold">14,95 $ <span class="text-xs text-gray-500 font-normal">/ pers.</span></span>
+</div>
+<button class="px-5 py-2.5 rounded-xl text-sm font-bold bg-secondary text-white hover:opacity-95 shadow-sm transition-all flex items-center gap-1">
+<span>Voir l'offre</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- VEDETTE 3: No.900 50% sur la 2e pizza -->
+<article class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-gray-100 group">
+<div class="relative w-full aspect-video overflow-hidden">
+<img alt="Pizzeria No 900" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1 items-start">
+<span class="px-3 py-1 rounded-lg bg-secondary text-white text-xl font-extrabold tracking-tight shadow-md">-50 % SUR LA 2E</span>
+<span class="px-2 py-0.5 rounded-md bg-purple-900 text-white text-xs font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[13px]">local_pizza</span> Napolitaine
+          </span>
+</div>
+<button aria-label="Favori" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md text-gray-600 hover:text-red-500 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<!-- VRAI COUNTDOWN NUMÉRIQUE 3 -->
+<div class="absolute bottom-2.5 left-2.5 right-2.5 bg-gray-950/90 backdrop-blur-md rounded-xl px-3 py-1.5 flex items-center justify-between border border-white/10 shadow-lg">
+<div class="flex items-center gap-1.5 text-xs font-bold text-red-400">
+<span class="material-symbols-outlined text-[16px] animate-bounce">hourglass_top</span>
+<span class="text-white text-[11px] font-semibold">Urgence :</span>
+</div>
+<div class="flex items-center gap-1 font-mono font-bold text-xs text-white" data-countdown="172800" id="hero-cd-3">
+<span class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 timer-d">02j</span> :
+            <span class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 timer-h">00h</span> :
+            <span class="bg-gray-800 px-1.5 py-0.5 rounded text-red-300 timer-m">00m</span> :
+            <span class="bg-promo-urgent px-1.5 py-0.5 rounded text-white timer-s">00s</span>
+</div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between gap-4">
+<div>
+<div class="flex items-center justify-between text-xs font-semibold mb-1">
+<span class="text-gray-500">Pizzeria No.900</span>
+<span class="text-primary font-bold bg-purple-50 px-2 py-0.5 rounded-md">Montréal · 800 m</span>
+</div>
+<h3 class="text-lg font-extrabold text-on-surface group-hover:text-primary transition-colors">
+            50 % de rabais sur la 2e pizza artisanale
+          </h3>
+<p class="text-sm text-on-surface-variant mt-1">
+            Cuite 90 secondes au four à bois. Valide sur toute la carte napolitaine certifiée AVPN.
+          </p>
+</div>
+<div class="pt-2 flex items-center justify-between border-t border-gray-100">
+<div class="flex flex-col">
+<span class="text-xs text-gray-400">Économisez env.</span>
+<span class="text-lg text-secondary font-extrabold">~ 11,50 $ <span class="text-xs text-gray-500 font-normal">de rabais</span></span>
+</div>
+<button class="px-5 py-2.5 rounded-xl text-sm font-bold bg-secondary text-white hover:opacity-95 shadow-sm transition-all flex items-center gap-1">
+<span>Voir l'offre</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- SECTION 2 : TOUTES LES PROMOTIONS À MONTRÉAL (GRILLE DE 6 CARTES AVEC COUNTDOWNS) -->
+<section class="flex flex-col gap-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div>
+<h2 class="text-2xl font-extrabold text-on-surface tracking-tight">
+        Toutes les promotions à Montréal
+      </h2>
+<p class="text-xs text-on-surface-variant">
+        Mis à jour il y a 8 minutes · 48 offres en vigueur aujourd'hui
+      </p>
+</div>
+<div class="flex items-center gap-2 text-xs font-bold text-green-700 bg-green-50 px-3 py-1.5 rounded-full border border-green-200 self-start sm:self-auto">
+<span class="w-2 h-2 rounded-full bg-success-green animate-ping"></span>
+      48 offres actives
+    </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Carte 1 : Taverne Gaspar -->
+<article class="bg-white rounded-2xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-gray-100">
+<div class="flex gap-4">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden shrink-0">
+<img alt="Taverne Gaspar" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-secondary text-white text-xs font-extrabold">7 $</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs mb-0.5">
+<span class="font-bold text-primary truncate">Taverne Gaspar</span>
+<span class="text-gray-400">3,1 km</span>
+</div>
+<h4 class="font-bold text-sm text-on-surface line-clamp-1">Cocktail signature à 7 $ &amp; Huîtres 1 $</h4>
+<p class="text-xs text-on-surface-variant line-clamp-2 mt-0.5">Happy Hour 5 à 7 du mercredi au vendredi. Huîtres fraîches.</p>
+</div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-[11px] font-medium text-gray-600">5 à 7</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-[11px] font-medium text-gray-600">Vieux-Montréal</span>
+</div>
+</div>
+</div>
+<!-- Countdown bar -->
+<div class="mt-3 pt-2.5 flex items-center justify-between border-t border-gray-100">
+<div class="flex items-center gap-1.5 font-mono text-xs font-bold text-secondary" data-countdown="51840">
+<span class="material-symbols-outlined text-[15px] animate-pulse">timer</span>
+<span class="text-gray-500 font-sans text-[11px]">Reste :</span>
+<span class="timer-display">14h : 24m : 00s</span>
+</div>
+<button class="text-xs font-bold text-primary hover:text-secondary flex items-center gap-1">
+<span>Voir l'offre</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Carte 2 : St-Hubert Plateau -->
+<article class="bg-white rounded-2xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-gray-100">
+<div class="flex gap-4">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden shrink-0">
+<img alt="St-Hubert" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-success-green text-white text-xs font-extrabold">GRATUIT</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs mb-0.5">
+<span class="font-bold text-primary truncate">St-Hubert Plateau</span>
+<span class="text-gray-400">1,5 km</span>
+</div>
+<h4 class="font-bold text-sm text-on-surface line-clamp-1">Repas enfant gratuit le dimanche</h4>
+<p class="text-xs text-on-surface-variant line-clamp-2 mt-0.5">Pour enfant de 9 ans et moins à l'achat d'un repas adulte régulier.</p>
+</div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-[11px] font-medium text-gray-600">Famille</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-[11px] font-medium text-gray-600">Sur place</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between border-t border-gray-100">
+<div class="flex items-center gap-1.5 font-mono text-xs font-bold text-gray-700" data-countdown="115200">
+<span class="w-2 h-2 rounded-full bg-success-green"></span>
+<span class="text-gray-500 font-sans text-[11px]">Reste :</span>
+<span class="timer-display">01j : 08h : 00s</span>
+</div>
+<button class="text-xs font-bold text-primary hover:text-secondary flex items-center gap-1">
+<span>Voir l'offre</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Carte 3 : Juliette & Chocolat -->
+<article class="bg-white rounded-2xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-gray-100">
+<div class="flex gap-4">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden shrink-0">
+<img alt="Juliette et Chocolat" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-primary text-white text-xs font-extrabold">-25 %</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs mb-0.5">
+<span class="font-bold text-primary truncate">Juliette &amp; Chocolat</span>
+<span class="text-gray-400">2,0 km</span>
+</div>
+<h4 class="font-bold text-sm text-on-surface line-clamp-1">25 % de rabais pour emporter</h4>
+<p class="text-xs text-on-surface-variant line-clamp-2 mt-0.5">Sur commande passée en ligne : brownies, crêpes et chocolats chauds.</p>
+</div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-purple-100 text-primary text-[11px] font-bold">Exclusif REL</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-[11px] font-medium text-gray-600">Emporter</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between border-t border-gray-100">
+<div class="flex items-center gap-1.5 font-mono text-xs font-bold text-primary" data-countdown="182400">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-gray-500 font-sans text-[11px]">Reste :</span>
+<span class="timer-display">02j : 02h : 40s</span>
+</div>
+<button class="text-xs font-bold text-primary hover:text-secondary flex items-center gap-1">
+<span>Voir l'offre</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Carte 4 : Bar à Vin Le Rosé -->
+<article class="bg-white rounded-2xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-gray-100">
+<div class="flex gap-4">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden shrink-0">
+<img alt="Bar a vin Le Rose" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-secondary text-white text-xs font-extrabold">49 $</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs mb-0.5">
+<span class="font-bold text-primary truncate">Bar à Vin Le Rosé</span>
+<span class="text-gray-400">1,9 km</span>
+</div>
+<h4 class="font-bold text-sm text-on-surface line-clamp-1">Forfait dégustation 2 personnes</h4>
+<p class="text-xs text-on-surface-variant line-clamp-2 mt-0.5">Plateau charcuteries &amp; fromages québécois avec 2 verres de vin nature.</p>
+</div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-[11px] font-medium text-gray-600">Soirée duo</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-[11px] font-medium text-gray-600">Vins nature</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between border-t border-gray-100">
+<div class="flex items-center gap-1.5 font-mono text-xs font-bold text-gray-700" data-countdown="216000">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-gray-500 font-sans text-[11px]">Reste :</span>
+<span class="timer-display">02j : 12h : 00s</span>
+</div>
+<button class="text-xs font-bold text-primary hover:text-secondary flex items-center gap-1">
+<span>Voir l'offre</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Carte 5 : Trattoria Da Vinci -->
+<article class="bg-white rounded-2xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-gray-100">
+<div class="flex gap-4">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden shrink-0">
+<img alt="Tiramisu Da Vinci" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-yellow-600 text-white text-xs font-extrabold">DESSERT</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs mb-0.5">
+<span class="font-bold text-primary truncate">Trattoria Da Vinci</span>
+<span class="text-gray-400">2,7 km</span>
+</div>
+<h4 class="font-bold text-sm text-on-surface line-clamp-1">Tiramisu maison offert dès 30 $</h4>
+<p class="text-xs text-on-surface-variant line-clamp-2 mt-0.5">Recette secrète de la Nonna préparée chaque matin au mascarpone frais.</p>
+</div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-[11px] font-medium text-gray-600">Italien</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-[11px] font-medium text-gray-600">Sur place</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between border-t border-gray-100">
+<div class="flex items-center gap-1.5 font-mono text-xs font-bold text-gray-700" data-countdown="98400">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-gray-500 font-sans text-[11px]">Reste :</span>
+<span class="timer-display">01j : 03h : 20s</span>
+</div>
+<button class="text-xs font-bold text-primary hover:text-secondary flex items-center gap-1">
+<span>Voir l'offre</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Carte 6 : L'Avenue Brunch -->
+<article class="bg-white rounded-2xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between border border-gray-100">
+<div class="flex gap-4">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden shrink-0">
+<img alt="Brunch L'Avenue" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-secondary text-white text-xs font-extrabold">-15 $</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-xs mb-0.5">
+<span class="font-bold text-primary truncate">L'Avenue Brunch</span>
+<span class="text-gray-400">1,1 km</span>
+</div>
+<h4 class="font-bold text-sm text-on-surface line-clamp-1">15 $ de réduction sur brunch</h4>
+<p class="text-xs text-on-surface-variant line-clamp-2 mt-0.5">Valable sur commande traiteur ou brunch à emporter dès 50 $ d'achat.</p>
+</div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-[11px] font-medium text-gray-600">Brunch culte</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-[11px] font-medium text-gray-600">Plateau</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between border-t border-gray-100">
+<div class="flex items-center gap-1.5 font-mono text-xs font-bold text-promo-urgent" data-countdown="2540">
+<span class="material-symbols-outlined text-[15px] animate-pulse">bolt</span>
+<span class="text-promo-urgent font-sans text-[11px]">Urgence :</span>
+<span class="timer-display">42m : 20s</span>
+</div>
+<button class="text-xs font-bold text-primary hover:text-secondary flex items-center gap-1">
+<span>Voir l'offre</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Pagination & Chargement -->
+<div class="flex flex-col items-center justify-center gap-3 pt-4">
+<button class="px-6 py-2.5 rounded-xl text-sm font-bold bg-white text-primary border border-surface-container shadow-sm hover:bg-surface-container flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+<span>Afficher 12 promotions supplémentaires</span>
+</button>
+<div class="flex items-center gap-1 text-sm">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center bg-white text-gray-400" disabled=""><span class="material-symbols-outlined text-[16px]">chevron_left</span></button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary text-white font-bold">1</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center bg-white text-gray-700 font-bold hover:bg-surface-container">2</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center bg-white text-gray-700 font-bold hover:bg-surface-container">3</button>
+<span class="px-1 text-gray-400">...</span>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center bg-white text-gray-700 font-bold hover:bg-surface-container">5</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center bg-white text-gray-700 hover:bg-surface-container"><span class="material-symbols-outlined text-[16px]">chevron_right</span></button>
+</div>
+</div>
+</section>
+<!-- SECTION 3 : COLLECTE COURRIEL (« 10 BONS PLANS RESTO » DU JEUDI MATIN) -->
+<section class="w-full">
+<div class="relative overflow-hidden w-full bg-gradient-to-br from-[#f8f0fc] to-[#f0e4f7] rounded-3xl p-6 lg:p-10 shadow-sm border border-purple-100">
+<div class="relative z-10 max-w-4xl mx-auto flex flex-col gap-6">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+<div class="flex-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white text-primary text-xs font-bold mb-2 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">mail</span>
+            L'Infolettre du Jeudi Midi
+          </div>
+<h2 class="text-2xl lg:text-3xl font-extrabold text-primary tracking-tight">
+            💌 10 bons plans resto près de chez toi, chaque jeudi matin
+          </h2>
+<p class="text-sm text-on-surface-variant mt-1">
+            Reçois une sélection personnalisée de promotions secrètes, concours et tables d'hôte selon ton code postal. Zéro spam, 100 % gourmandise locale.
+          </p>
+</div>
+<div class="shrink-0 flex flex-col items-center md:items-end">
+<div class="flex -space-x-2 overflow-hidden mb-1">
+<div class="w-8 h-8 rounded-full ring-2 ring-white bg-primary text-white flex items-center justify-center font-bold text-[10px]">MTL</div>
+<div class="w-8 h-8 rounded-full ring-2 ring-white bg-secondary text-white flex items-center justify-center font-bold text-[10px]">QBC</div>
+<div class="w-8 h-8 rounded-full ring-2 ring-white bg-yellow-600 text-white flex items-center justify-center font-bold text-[10px]">LAV</div>
+<div class="w-8 h-8 rounded-full ring-2 ring-white bg-purple-900 text-white flex items-center justify-center font-bold text-[10px]">+45k</div>
+</div>
+<span class="text-xs text-primary font-bold">45 000+ foodies québécois</span>
+</div>
+</div>
+<!-- Formulaire 3 champs -->
+<form class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3" onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');">
+<div>
+<label class="block text-xs font-bold text-gray-700 mb-1">Ton prénom</label>
+<input class="w-full bg-white px-4 py-2.5 rounded-xl text-sm border border-purple-100 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Ex: Camille" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-gray-700 mb-1">Ton courriel gourmand</label>
+<input class="w-full bg-white px-4 py-2.5 rounded-xl text-sm border border-purple-100 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="camille@exemple.ca" required="" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-gray-700 mb-1">Code postal (3 ou 6 car.)</label>
+<input class="w-full bg-white px-4 py-2.5 rounded-xl text-sm border border-purple-100 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm font-semibold uppercase" placeholder="H2X 1Y4" required="" type="text" value="H2X 1Y4"/>
+</div>
+<div class="flex items-end">
+<button class="w-full py-2.5 px-4 rounded-xl text-sm font-bold bg-secondary text-white hover:opacity-95 shadow-sm transition-all flex items-center justify-center gap-2" type="submit">
+<span>Recevoir mes Highlights</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</form>
+<div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-success-green">check_circle</span> Désabonnement en 1 clic à tout moment</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-success-green">shield</span> Données hébergées au Québec</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4 : « DERNIÈRES HEURES (< 72H) » AVEC 3 CARTES D'URGENCE & COMPTES À REBOURS ACTIFS -->
+<section class="flex flex-col gap-4">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-100 text-promo-urgent text-xs font-extrabold tracking-wider uppercase mb-1">
+<span class="w-2 h-2 rounded-full bg-promo-urgent animate-ping"></span>
+        Offres limitées dans le temps
+      </div>
+<h2 class="text-2xl lg:text-3xl font-extrabold text-on-surface tracking-tight flex items-center gap-2">
+<span>⏳ Dernières heures : se terminent dans moins de 72h</span>
+</h2>
+<p class="text-sm text-on-surface-variant mt-1">
+        Dépêche-toi ! Ces offres exclusives expirent très bientôt près de chez toi.
+      </p>
+</div>
+<span class="inline-flex items-center gap-1 text-promo-urgent text-xs font-bold bg-red-50 px-3 py-1.5 rounded-full border border-red-200 self-start sm:self-auto">
+<span class="material-symbols-outlined text-[16px] animate-pulse">bolt</span>
+      Quantités &amp; créneaux réservés
+    </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- CARTE D'URGENCE 1: Sushi Momo (-40%) -->
+<article class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between border-2 border-red-300 hover:border-promo-urgent group">
+<div class="relative w-full aspect-video overflow-hidden">
+<img alt="Sushi Momo plateau végétalien" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1 items-start">
+<span class="px-3 py-1 rounded-lg bg-promo-urgent text-white text-xl font-extrabold tracking-tight shadow-md">-40 %</span>
+<span class="px-2 py-0.5 rounded bg-white text-promo-urgent text-xs font-bold shadow-sm">Expire ce soir</span>
+</div>
+<button aria-label="Favori" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md text-gray-600 hover:text-red-500 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<!-- VRAI PAVÉ NUMÉRIQUE DÉCOMPTE 1 -->
+<div class="absolute bottom-2.5 left-2.5 right-2.5 bg-gray-950/95 backdrop-blur-md rounded-xl p-2 shadow-xl border border-white/10 flex items-center justify-between text-white">
+<div class="flex items-center gap-1.5 text-xs font-bold text-red-400">
+<span class="material-symbols-outlined text-[16px] animate-pulse">local_fire_department</span>
+<span class="text-white text-[11px] uppercase tracking-wider font-extrabold">Fin du chrono :</span>
+</div>
+<div class="flex items-center gap-1 font-mono font-extrabold text-xs" data-countdown="19394" id="urgent-timer-1">
+<span class="bg-promo-urgent text-white px-2 py-0.5 rounded shadow-inner timer-h">05</span><span class="text-red-400">:</span>
+<span class="bg-promo-urgent text-white px-2 py-0.5 rounded shadow-inner timer-m">23</span><span class="text-red-400">:</span>
+<span class="bg-promo-urgent text-white px-2 py-0.5 rounded shadow-inner timer-s">14</span>
+</div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between gap-4">
+<div>
+<div class="flex items-center justify-between text-xs mb-1">
+<span class="text-gray-500 font-semibold">Sushi Momo</span>
+<span class="text-primary font-bold bg-purple-50 px-2 py-0.5 rounded-md">Montréal · 950 m</span>
+</div>
+<h3 class="text-lg font-extrabold text-on-surface group-hover:text-primary transition-colors">
+            Plateau Découverte 24 mcx à -40 %
+          </h3>
+<p class="text-sm text-on-surface-variant mt-1">
+            Plateau végétalien d'exception préparé minute par le chef Christian Ventura. Explosion de saveurs garantie.
+          </p>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="px-2 py-0.5 rounded-md bg-red-50 text-promo-urgent text-xs font-bold">Dernière chance</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-gray-600 text-xs font-medium">Sur place &amp; Emporter</span>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between border-t border-gray-100">
+<div class="flex flex-col">
+<span class="text-xs text-gray-400 line-through">52,00 $</span>
+<span class="text-lg text-promo-urgent font-extrabold">31,20 $ <span class="text-xs text-gray-500 font-normal">total</span></span>
+</div>
+<button class="px-5 py-2.5 rounded-xl text-sm font-bold bg-secondary text-white hover:opacity-95 shadow-sm transition-all flex items-center gap-1">
+<span>Voir l'offre</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARTE D'URGENCE 2: Brasserie Harricana (Économisez 26 $) -->
+<article class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between border-2 border-orange-300 hover:border-secondary group">
+<div class="relative w-full aspect-video overflow-hidden">
+<img alt="Brasserie Harricana dégustation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1 items-start">
+<span class="px-3 py-1 rounded-lg bg-secondary text-white text-lg font-extrabold tracking-tight shadow-md">ÉCONOMISEZ 26 $</span>
+<span class="px-2 py-0.5 rounded bg-white text-secondary text-xs font-bold shadow-sm">Forfait Terroir Duo</span>
+</div>
+<button aria-label="Favori" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md text-gray-600 hover:text-red-500 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<!-- VRAI PAVÉ NUMÉRIQUE DÉCOMPTE 2 -->
+<div class="absolute bottom-2.5 left-2.5 right-2.5 bg-gray-950/95 backdrop-blur-md rounded-xl p-2 shadow-xl border border-white/10 flex items-center justify-between text-white">
+<div class="flex items-center gap-1.5 text-xs font-bold text-orange-400">
+<span class="material-symbols-outlined text-[16px] animate-spin">schedule</span>
+<span class="text-white text-[11px] uppercase tracking-wider font-extrabold">Expire dans :</span>
+</div>
+<div class="flex items-center gap-1 font-mono font-extrabold text-xs" data-countdown="78470" id="urgent-timer-2">
+<span class="bg-secondary text-white px-2 py-0.5 rounded shadow-inner timer-h">21</span><span class="text-orange-400">:</span>
+<span class="bg-secondary text-white px-2 py-0.5 rounded shadow-inner timer-m">47</span><span class="text-orange-400">:</span>
+<span class="bg-secondary text-white px-2 py-0.5 rounded shadow-inner timer-s">50</span>
+</div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between gap-4">
+<div>
+<div class="flex items-center justify-between text-xs mb-1">
+<span class="text-gray-500 font-semibold">Brasserie Harricana</span>
+<span class="text-primary font-bold bg-purple-50 px-2 py-0.5 rounded-md">Mile-Ex · 2,1 km</span>
+</div>
+<h3 class="text-lg font-extrabold text-on-surface group-hover:text-primary transition-colors">
+            Formule Dégustation Bières &amp; Terroir pour 2
+          </h3>
+<p class="text-sm text-on-surface-variant mt-1">
+            Plateau généreux de bières brassées sur place jumelées à des bouchées du terroir québécois. 39 $ au lieu de 65 $.
+          </p>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="px-2 py-0.5 rounded-md bg-orange-100 text-secondary text-xs font-bold">Moins de 24h</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-gray-600 text-xs font-medium">Bière &amp; Gastronomie</span>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between border-t border-gray-100">
+<div class="flex flex-col">
+<span class="text-xs text-gray-400 line-through">65,00 $</span>
+<span class="text-lg text-secondary font-extrabold">39,00 $ <span class="text-xs text-gray-500 font-normal">/ duo</span></span>
+</div>
+<button class="px-5 py-2.5 rounded-xl text-sm font-bold bg-secondary text-white hover:opacity-95 shadow-sm transition-all flex items-center gap-1">
+<span>Voir l'offre</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARTE D'URGENCE 3: Il Focolaio (2 POUR 1) -->
+<article class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between border-2 border-purple-300 hover:border-primary group">
+<div class="relative w-full aspect-video overflow-hidden">
+<img alt="Pizzeria Il Focolaio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1 items-start">
+<span class="px-3 py-1 rounded-lg bg-secondary text-white text-xl font-extrabold tracking-tight shadow-md">2 POUR 1</span>
+<span class="px-2 py-0.5 rounded bg-white text-primary text-xs font-bold shadow-sm">Toutes les classiques</span>
+</div>
+<button aria-label="Favori" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md text-gray-600 hover:text-red-500 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<!-- VRAI PAVÉ NUMÉRIQUE DÉCOMPTE 3 -->
+<div class="absolute bottom-2.5 left-2.5 right-2.5 bg-gray-950/95 backdrop-blur-md rounded-xl p-2 shadow-xl border border-white/10 flex items-center justify-between text-white">
+<div class="flex items-center gap-1.5 text-xs font-bold text-purple-300">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+<span class="text-white text-[11px] uppercase tracking-wider font-extrabold">Temps restant :</span>
+</div>
+<div class="flex items-center gap-1 font-mono font-extrabold text-xs" data-countdown="166353" id="urgent-timer-3">
+<span class="bg-primary text-white px-2 py-0.5 rounded shadow-inner timer-h">46</span><span class="text-purple-300">:</span>
+<span class="bg-primary text-white px-2 py-0.5 rounded shadow-inner timer-m">12</span><span class="text-purple-300">:</span>
+<span class="bg-primary text-white px-2 py-0.5 rounded shadow-inner timer-s">33</span>
+</div>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between gap-4">
+<div>
+<div class="flex items-center justify-between text-xs mb-1">
+<span class="text-gray-500 font-semibold">Pizzeria Il Focolaio</span>
+<span class="text-primary font-bold bg-purple-50 px-2 py-0.5 rounded-md">Centre-Ville · 1,4 km</span>
+</div>
+<h3 class="text-lg font-extrabold text-on-surface group-hover:text-primary transition-colors">
+            1 Pizza Classique achetée = 1 Pizza offerte
+          </h3>
+<p class="text-sm text-on-surface-variant mt-1">
+            Sélectionnez parmi plus de 75 pizzas cuites sur pierre. Valable midi et soir du lundi au jeudi inclus.
+          </p>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-gray-600 text-xs font-medium">Four à pierre</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-gray-600 text-xs font-medium">Sur place &amp; Emporter</span>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between border-t border-gray-100">
+<div class="flex flex-col">
+<span class="text-xs text-gray-400 line-through">42,50 $</span>
+<span class="text-lg text-secondary font-extrabold">21,25 $ <span class="text-xs text-gray-500 font-normal">total</span></span>
+</div>
+<button class="px-5 py-2.5 rounded-xl text-sm font-bold bg-secondary text-white hover:opacity-95 shadow-sm transition-all flex items-center gap-1">
+<span>Voir l'offre</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- SECTION 5 : BLOC INSTAGRAM SOLID VIOLET CONTRASTÉ -->
+<section class="w-full">
+<div class="relative overflow-hidden w-full rounded-2xl p-6 lg:p-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6 bg-[#5e258d]">
+<div class="flex items-start md:items-center gap-4 flex-1 text-white">
+<div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center shrink-0 border border-white/20">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</div>
+<div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/20 text-yellow-300 text-[10px] uppercase font-bold mb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+          Communauté Instagram @restoenlignecom
+        </div>
+<h3 class="text-base font-extrabold">Retrouvez les coulisses et concours gourmands du Québec</h3>
+<p class="text-xs text-purple-200 mt-0.5">Stories quotidiennes, tirages de cartes-cadeaux de 100 $ chaque semaine.</p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<a class="px-5 py-2.5 rounded-xl bg-white text-primary hover:bg-purple-50 text-sm font-bold shadow-md transition-all inline-flex items-center gap-2 whitespace-nowrap" href="https://instagram.com/restoenlignecom" rel="noopener noreferrer" target="_blank">
+<span>Suivre @restoenlignecom</span>
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 6 : SIMULATEUR D'ÉTATS INTERACTIF (QA / DEMO) -->
+<section class="w-full pt-4">
+<div class="w-full bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-bold text-sm text-on-surface">Simulateur d'états :</span>
+<span class="text-xs text-gray-500">Testez les variantes métier</span>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg text-xs font-bold bg-primary text-white shadow-sm" onclick="alert('Vue Principale active : 48 offres affichées.')">Vue Principale (48 Actives)</button>
+<button class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-surface-container text-gray-700 hover:bg-gray-200" onclick="alert('Simulation État Vide : 0 offre trouvée dans ce rayon.')">État Vide (0)</button>
+<button class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-surface-container text-red-600 hover:bg-red-50 flex items-center gap-1" onclick="alert('Mode Alerte Urgence : 14 offres expirent ce soir.')"><span class="w-1.5 h-1.5 rounded-full bg-promo-urgent"></span> Urgence Ce Soir</button>
+<button class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-surface-container text-gray-700 hover:bg-gray-200" onclick="alert('Simulation : Géolocalisation refusée.')">Localisation Refusée</button>
+</div>
+</div>
+</section>
+</div></main>
+<!-- FOOTER OFFICIEL RESTOENLIGNE -->
+<footer class="w-full bg-white border-t border-surface-container py-8 text-xs text-gray-500">
+<div class="max-w-[1280px] mx-auto px-4 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<img alt="RestoEnLigne" class="h-6 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXQ3jvGfoXDLufn_dQ6OrRktY9lBfk_YlvhGL_NkwvL5NGWIbF-LWSBLUMhfqjXhNQK46MN20kZ1ZUfs5eJf0RmbLBBQ_LCDsj5XW05w4ZLYYK83lpXIowc2O-jzqCpfPDbdRC-1GDf3pZr7KoTHJKqWhWUHeQQEzsunRuUKE0cTC4sq1xDyvEZ8EdCHbPWYOgZFylVIyi82Aam_ZAG8SGb3RyzGXqbqtqoCyfNvBnKP8Rsdw9joxgBQPfUWyby9NaGWg"/>
+<span>La destination gourmande pour dénicher les meilleures tables du Québec.</span>
+</div>
+<div class="flex items-center gap-6">
+<a class="hover:underline" href="#">À propos</a>
+<a class="hover:underline" href="#">Pour les restaurateurs</a>
+<a class="hover:underline" href="#">Contact</a>
+<a class="hover:underline" href="#">Confidentialité</a>
+<a class="hover:underline" href="#">Conditions</a>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-4 lg:px-8 mt-4 pt-4 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-2 text-gray-400">
+<span>❤️ Fait avec passion au Québec</span>
+<span>© 2025 RestoEnLigne Inc. Tous droits réservés.</span>
+</div>
+</footer>
+<!-- SCRIPT DE COUNTDOWNS DYNAMIQUES EN TEMPS RÉEL -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const countdownElements = document.querySelectorAll('[data-countdown]');
+  
+  function updateCountdowns() {
+    countdownElements.forEach(el => {
+      let remaining = parseInt(el.getAttribute('data-countdown'), 10);
+      if (isNaN(remaining)) return;
+      if (remaining > 0) {
+        remaining -= 1;
+        el.setAttribute('data-countdown', remaining);
+      }
+
+      const days = Math.floor(remaining / (3600 * 24));
+      const hours = Math.floor((remaining % (3600 * 24)) / 3600);
+      const minutes = Math.floor((remaining % 3600) / 60);
+      const seconds = Math.floor(remaining % 60);
+
+      const dStr = String(days).padStart(2, '0') + 'j';
+      const hStr = String(hours).padStart(2, '0');
+      const mStr = String(minutes).padStart(2, '0');
+      const sStr = String(seconds).padStart(2, '0');
+
+      // Pour les pavés numériques séparés
+      const elD = el.querySelector('.timer-d');
+      const elH = el.querySelector('.timer-h');
+      const elM = el.querySelector('.timer-m');
+      const elS = el.querySelector('.timer-s');
+      if (elD) elD.textContent = dStr;
+      if (elH) elH.textContent = hStr + (el.id && el.id.startsWith('hero') ? 'h' : '');
+      if (elM) elM.textContent = mStr + (el.id && el.id.startsWith('hero') ? 'm' : '');
+      if (elS) elS.textContent = sStr + (el.id && el.id.startsWith('hero') ? 's' : '');
+
+      // Pour l'affichage compact
+      const displayEl = el.querySelector('.timer-display');
+      if (displayEl) {
+        if (days > 0) {
+          displayEl.textContent = `${dStr} : ${hStr}h : ${mStr}m : ${sStr}s`;
+        } else {
+          displayEl.textContent = `${hStr}h : ${mStr}m : ${sStr}s`;
+        }
+      }
+    });
+  }
+
+  setInterval(updateCountdowns, 1000);
+});
+</script>
+</body></html>
