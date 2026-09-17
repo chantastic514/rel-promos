@@ -1,0 +1,1316 @@
+<!DOCTYPE html><html lang="fr" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "secondary-container": "#fe6431",
+        "surface": "#fff7ff",
+        "inverse-on-surface": "#f7edfb",
+        "inverse-surface": "#342e39",
+        "secondary-fixed-dim": "#ffb59f",
+        "tertiary-fixed-dim": "#ffba20",
+        "on-error-container": "#93000a",
+        "surface-container": "#f5ebf8",
+        "on-primary-container": "#d099ff",
+        "surface-canvas": "#FAF9FC",
+        "error": "#ba1a1a",
+        "surface-tint": "#7b44ab",
+        "on-tertiary-fixed-variant": "#5e4200",
+        "on-tertiary": "#ffffff",
+        "on-primary-fixed-variant": "#622991",
+        "on-secondary-fixed": "#3a0a00",
+        "surface-dim": "#e0d7e4",
+        "on-background": "#1e1a23",
+        "success-green": "#12B76A",
+        "outline": "#7d7482",
+        "surface-container-lowest": "#ffffff",
+        "on-secondary-fixed-variant": "#852400",
+        "on-surface-variant": "#4c4451",
+        "on-primary-fixed": "#2d004f",
+        "inverse-primary": "#dfb7ff",
+        "promo-exclusive": "#491D6E",
+        "on-secondary": "#ffffff",
+        "outline-variant": "#cec3d2",
+        "error-container": "#ffdad6",
+        "secondary-fixed": "#ffdbd0",
+        "secondary": "#ae3100",
+        "promo-urgent": "#D92D20",
+        "primary-fixed": "#f1daff",
+        "tertiary": "#3d2900",
+        "on-error": "#ffffff",
+        "surface-container-high": "#efe5f3",
+        "surface-bright": "#fff7ff",
+        "primary": "#460175",
+        "tertiary-fixed": "#ffdea8",
+        "on-surface": "#1e1a23",
+        "primary-container": "#5e258d",
+        "on-tertiary-fixed": "#271900",
+        "surface-variant": "#e9dfed",
+        "surface-container-low": "#faf0fe",
+        "on-secondary-container": "#5b1500",
+        "on-primary": "#ffffff",
+        "surface-card": "#FFFFFF",
+        "on-tertiary-container": "#e4a400",
+        "background": "#fff7ff",
+        "tertiary-container": "#593e00",
+        "surface-container-highest": "#e9dfed",
+        "primary-fixed-dim": "#dfb7ff"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-sm": "0.5rem",
+        "space-xs": "0.25rem",
+        "space-xl": "2.5rem",
+        "gutter-mobile": "1rem",
+        "margin": "2rem",
+        "space-lg": "1.5rem",
+        "margin-mobile": "1rem",
+        "space-md": "1rem",
+        "gutter": "1.25rem"
+      },
+      "fontFamily": {
+        "headline-sm": [
+          "Plus Jakarta Sans"
+        ],
+        "title-md": [
+          "Plus Jakarta Sans"
+        ],
+        "display-lg-mobile": [
+          "Plus Jakarta Sans"
+        ],
+        "body-lg": [
+          "Plus Jakarta Sans"
+        ],
+        "label-md": [
+          "Plus Jakarta Sans"
+        ],
+        "headline-lg-mobile": [
+          "Plus Jakarta Sans"
+        ],
+        "headline-lg": [
+          "Plus Jakarta Sans"
+        ],
+        "body-sm": [
+          "Plus Jakarta Sans"
+        ],
+        "label-lg": [
+          "Plus Jakarta Sans"
+        ],
+        "label-sm": [
+          "Plus Jakarta Sans"
+        ],
+        "display-lg": [
+          "Plus Jakarta Sans"
+        ],
+        "headline-md": [
+          "Plus Jakarta Sans"
+        ],
+        "body-md": [
+          "Plus Jakarta Sans"
+        ]
+      },
+      "fontSize": {
+        "headline-sm": [
+          "20px",
+          {
+            "lineHeight": "28px",
+            "fontWeight": "600"
+          }
+        ],
+        "title-md": [
+          "18px",
+          {
+            "lineHeight": "26px",
+            "fontWeight": "600"
+          }
+        ],
+        "display-lg-mobile": [
+          "34px",
+          {
+            "lineHeight": "42px",
+            "letterSpacing": "-0.02em",
+            "fontWeight": "800"
+          }
+        ],
+        "body-lg": [
+          "16px",
+          {
+            "lineHeight": "24px",
+            "fontWeight": "400"
+          }
+        ],
+        "label-md": [
+          "12px",
+          {
+            "lineHeight": "16px",
+            "letterSpacing": "0.02em",
+            "fontWeight": "700"
+          }
+        ],
+        "headline-lg-mobile": [
+          "26px",
+          {
+            "lineHeight": "34px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "700"
+          }
+        ],
+        "headline-lg": [
+          "32px",
+          {
+            "lineHeight": "40px",
+            "letterSpacing": "-0.02em",
+            "fontWeight": "700"
+          }
+        ],
+        "body-sm": [
+          "12px",
+          {
+            "lineHeight": "18px",
+            "fontWeight": "400"
+          }
+        ],
+        "label-lg": [
+          "14px",
+          {
+            "lineHeight": "20px",
+            "letterSpacing": "0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "label-sm": [
+          "11px",
+          {
+            "lineHeight": "14px",
+            "letterSpacing": "0.04em",
+            "fontWeight": "700"
+          }
+        ],
+        "display-lg": [
+          "48px",
+          {
+            "lineHeight": "56px",
+            "letterSpacing": "-0.03em",
+            "fontWeight": "800"
+          }
+        ],
+        "headline-md": [
+          "24px",
+          {
+            "lineHeight": "32px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "700"
+          }
+        ],
+        "body-md": [
+          "14px",
+          {
+            "lineHeight": "22px",
+            "fontWeight": "400"
+          }
+        ]
+      }
+    }
+  }
+}</script></head><body class="bg-surface-canvas font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-card/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-xs group" data-path="restaurants" href="#"><div class="flex items-center"><span class="font-headline-md text-headline-md text-primary tracking-tight font-extrabold">RestoEnLigne</span><span class="w-2.5 h-2.5 rounded-full bg-secondary-container ml-1 group-hover:scale-125 transition-transform"></span></div></a><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-xl shadow-sm"><a class="px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="restaurants" href="#">Restaurants</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-bold rounded-xl shadow-sm" data-path="promotions" href="#">Promotions</a><a class="px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="evenements" href="#">Événements</a><a class="px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="concours" href="#">Concours</a><a class="px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="cartes-cadeaux" href="#">Cartes-cadeaux</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center bg-surface-container-low rounded-full p-0.5"><button class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-surface-card text-primary font-bold shadow-[0_1px_4px_rgba(0,0,0,0.06)]">FR</button><button class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors">EN</button></div><button aria-label="Recherche rapide" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><a class="hidden md:inline-flex items-center font-label-md text-label-md text-primary-container hover:text-primary font-bold transition-colors" data-path="espace-restaurateur" href="#">Espace Resto</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface-canvas"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Decorator (contained) -->
+<div class="relative w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+<div class="absolute -top-10 left-1/4 w-96 h-96 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-20 right-10 w-80 h-80 bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- 1. HERO COMPACT & GÉOLOCALISATION IMMÉDIATE -->
+<section class="pt-space-lg pb-space-lg w-full flex flex-col gap-space-md">
+<div class="flex flex-col max-w-3xl">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm uppercase tracking-wider mb-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          Offres en temps réel au Québec
+        </div>
+<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-on-surface tracking-tight">
+          Les meilleures promotions de restaurants <span class="text-primary font-extrabold underline decoration-secondary-container decoration-4 underline-offset-4">près de chez toi</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+          Découvre les rabais, menus spéciaux et offres à durée limitée disponibles dans les restos de ta région.
+        </p>
+</div>
+<!-- Geo Search Box -->
+<div class="w-full bg-surface-card rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<form class="flex flex-col md:flex-row items-stretch md:items-center gap-space-sm" id="geoForm" onsubmit="event.preventDefault(); triggerFilterUpdate();">
+<div class="relative flex-1 flex items-center bg-surface-container-low rounded-xl px-space-md py-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mr-space-xs">location_on</span>
+<div class="flex flex-col flex-1 min-w-0">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="postalInput">Localisation cible</label>
+<input class="bg-transparent font-title-md text-title-md text-on-surface font-semibold focus:outline-none placeholder:text-outline" id="postalInput" placeholder="Ville ou code postal (ex: H2X 1Y4)" type="text" value="Montréal, QC — H2X 1Y4">
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded-full hover:bg-surface-container" onclick="document.getElementById('postalInput').value='Montréal, QC — H2X 1Y4'; showToast('Position réinitialisée à Montréal');" title="Effacer" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-md rounded-xl font-label-lg text-label-lg text-primary font-bold hover:bg-surface-container flex items-center gap-space-xs transition-colors" id="geoBtn" onclick="simulateGeoDetection();" type="button">
+<span class="material-symbols-outlined text-[20px] text-primary">my_location</span>
+<span class="">Utiliser ma position</span>
+</button>
+<button class="px-space-xl py-space-md rounded-xl font-label-lg text-label-lg bg-secondary-container text-on-primary font-bold shadow-sm hover:opacity-95 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-space-xs" type="submit">
+<span class="">Voir les offres</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</form>
+<!-- Active Geo Radius Pill -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pt-space-xs">
+<div class="inline-flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold text-[12px]">📍</span>
+<span class="">Promotions sélectionnées près de <strong class="text-on-surface">Montréal — H2X 1Y4</strong></span>
+<span class="inline-block px-space-xs py-0.5 rounded-md bg-surface-container text-primary font-bold text-label-sm">Rayon : 10 km</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="font-label-md text-label-md text-primary font-bold hover:underline inline-flex items-center gap-1" onclick="toggleRadiusModal();" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span class="">Modifier le rayon</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. BARRE DE FILTRES RAPIDES (CHIPS) & TRI -->
+<section class="py-space-sm flex flex-col gap-space-sm">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Quick Filter Scrollable Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 max-w-full">
+<button class="chip-filter active-chip whitespace-nowrap px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all flex items-center gap-space-xs bg-primary-container text-on-primary font-bold shadow-sm" onclick="setCategoryFilter('all', this)">
+<span class="">Tous</span>
+<span class="px-1.5 py-0.5 text-[11px] rounded-full bg-on-primary/20 text-on-primary font-bold">48</span>
+</button>
+<button class="chip-filter whitespace-nowrap px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all flex items-center gap-space-xs bg-surface-card text-on-surface hover:bg-surface-container font-semibold" onclick="setCategoryFilter('today', this)">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">local_fire_department</span>
+<span class="">Aujourd'hui</span>
+<span class="w-2 h-2 rounded-full bg-success-green"></span>
+</button>
+<button class="chip-filter whitespace-nowrap px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all bg-surface-card text-on-surface hover:bg-surface-container font-semibold" onclick="setCategoryFilter('week', this)">
+            Cette semaine
+          </button>
+<button class="chip-filter whitespace-nowrap px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all bg-surface-card text-on-surface hover:bg-surface-container font-semibold" onclick="setCategoryFilter('2for1', this)">
+            2 pour 1
+          </button>
+<button class="chip-filter whitespace-nowrap px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all bg-surface-card text-on-surface hover:bg-surface-container font-semibold" onclick="setCategoryFilter('under20', this)">
+            Moins de 20 $
+          </button>
+<button class="chip-filter whitespace-nowrap px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all bg-surface-card text-on-surface hover:bg-surface-container font-semibold" onclick="setCategoryFilter('freebie', this)">
+            Gratuités
+          </button>
+<button class="chip-filter whitespace-nowrap px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all bg-surface-card text-on-surface hover:bg-surface-container font-semibold" onclick="setCategoryFilter('lunch', this)">
+            Menus du midi
+          </button>
+<button class="chip-filter whitespace-nowrap px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all flex items-center gap-space-xs bg-surface-card text-primary font-bold hover:bg-surface-container" onclick="setCategoryFilter('exclusive', this)">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="">Offres exclusives REL</span>
+</button>
+</div>
+<!-- Controls: All Filters modal button + Sort dropdown -->
+<div class="flex items-center justify-between lg:justify-end gap-space-sm min-w-max">
+<button class="px-space-md py-space-xs rounded-xl font-label-lg text-label-lg bg-surface-card text-primary hover:bg-surface-container font-bold shadow-sm flex items-center gap-space-xs" onclick="toggleFilterModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span class="">Tous les filtres</span>
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary text-[11px] flex items-center justify-center font-bold">3</span>
+</button>
+<div class="relative flex items-center bg-surface-card rounded-xl px-space-md py-space-xs shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">Trier par :</span>
+<select class="bg-transparent font-label-lg text-label-lg text-on-surface font-bold focus:outline-none cursor-pointer pr-space-xs" id="sortSelect" onchange="applySort(this.value)">
+<option value="recommended">Recommandées pour moi</option>
+<option value="nearest">Les plus proches</option>
+<option value="expiring">Expirent bientôt</option>
+<option value="recent">Les plus récentes</option>
+<option value="savings">Meilleures économies</option>
+</select>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. SECTION « À NE PAS MANQUER PRÈS DE MONTRÉAL » (3 PROMOTIONS VEDETTES) -->
+<section class="pt-space-lg pb-space-lg">
+<div class="flex items-end justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-wider font-extrabold">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+            Sélection premium du chef
+          </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface tracking-tight">
+            À ne pas manquer près de Montréal
+          </h2>
+</div>
+<span class="hidden sm:inline-flex font-label-md text-label-md text-on-surface-variant font-medium">
+          3 offres coup de cœur en vedette
+        </span>
+</div>
+<!-- Bento Featured Trio Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- VEDETTE 1: Kinton Ramen 2 pour 1 -->
+<article class="group bg-surface-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A steaming hot artisan ramen bowl with tender chashu pork, rich creamy broth, soft-boiled ajitsuke tamago, fresh scallions and nori in an authentic Montreal Plateau Japanese bistro ambiance with soft warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCge7DAGmbON46sjYCv1dUNg9axNQdFd0DLi881QxdhnzaasXZd0rVB9lN54F-6F5TPfX4jRw2MpxQrwlmDVZma5GU37m6dWVcHD1L9DiDB31EZZUC-xzm2NonWKPHSGTiSCtj6QYz784ZnxkrootAUlSYxB-KCHoDprTReg-X2w-KZfhYXNmryXZeyiWDLP5j6phW6npZUgUnhDudp5SNnPEHxsJe225rLdg6bmddFu764tDN1KYMkgQ">
+<!-- Discount Badge -->
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-1 items-start">
+<span class="px-space-sm py-1 rounded-md bg-secondary-container text-on-primary font-display-lg text-[22px] font-extrabold tracking-tight shadow-md leading-none">
+                2 POUR 1
+              </span>
+<span class="px-space-xs py-0.5 rounded-md bg-promo-exclusive text-on-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">star</span> Exclusivité REL
+              </span>
+</div>
+<!-- Favorite button -->
+<button aria-label="Favori" class="absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-card/90 backdrop-blur-md text-on-surface-variant hover:text-error flex items-center justify-center shadow-sm transition-transform active:scale-90" onclick="toggleFav(this)">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<!-- Urgency pill bottom of photo -->
+<div class="absolute bottom-space-xs left-space-sm px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-promo-urgent">timer</span>
+<span class="">Expire ce dimanche (27 sept.)</span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Restaurant Kinton Ramen</span>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-surface-container px-2 py-0.5 rounded-md">Montréal (Plateau) · 1,2 km</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold tracking-tight group-hover:text-primary transition-colors">
+                Deux ramens Signature pour le prix d'un
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Valable sur les bols Shoyu, Miso et Piquant avec tout achat de boisson maison.
+              </p>
+<div class="flex flex-wrap gap-space-xs mt-space-sm">
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium">Sur place</span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium">Spécial dîner &amp; souper</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant line-through">Valeur 39,90 $</span>
+<span class="font-title-md text-title-md text-secondary font-extrabold">19,95 $ <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">total</span></span>
+</div>
+<button class="px-space-lg py-space-sm rounded-xl font-label-lg text-label-lg bg-secondary-container text-on-primary font-bold hover:opacity-95 shadow-sm transition-all" onclick="openOfferModal('Kinton Ramen', 'Deux ramens Signature pour le prix d\'un', '2 POUR 1', 'CODE: KINTON2X1')">
+                Voir l'offre
+              </button>
+</div>
+</div>
+</article>
+<!-- VEDETTE 2: Le Coup Monté Menu Midi 14,95 $ -->
+<article class="group bg-surface-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An elegant Montreal French bistro table set with a 3-course lunch table d'hote, duck confit with pomme puree, delicate house soup, and artisan dessert on rustic wood table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf21ftC9rEkNduntiieH0gcdfFeMgpcURTtfIWdeNbAj-IGeATc7hywx-w-VZUhPvoeF2SF-QHEXjWJu0iAnk5KmxsuccFiYPnEDO105AiWi6Ha1r8g4Eokh9mbnmp_cInvH38TsM_Y9edKDllH1xL9Ql9O0M1oWZ43f0O3y07Zd7Sbwh_OgyJn_4BlDI1InIHHKCBEK29sxbvKsT2iJU8nJ7x7ENQN6wXMcJKfB5AonC88tB3HXGBFA">
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-1 items-start">
+<span class="px-space-sm py-1 rounded-md bg-primary-container text-on-primary font-display-lg text-[22px] font-extrabold tracking-tight shadow-md leading-none">
+                MIDI 14,95 $
+              </span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-card text-on-surface font-label-sm text-label-sm font-bold shadow-sm">
+                Val. 24 $ (-38%)
+              </span>
+</div>
+<button aria-label="Favori" class="absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-card/90 backdrop-blur-md text-on-surface-variant hover:text-error flex items-center justify-center shadow-sm transition-transform active:scale-90" onclick="toggleFav(this)">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-space-xs left-space-sm px-space-sm py-0.5 rounded-full bg-surface-card/95 text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">calendar_today</span>
+<span class="">Valide du mardi au vendredi</span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Bistro Le Coup Monté</span>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-surface-container px-2 py-0.5 rounded-md">Montréal · 2,4 km</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold tracking-tight group-hover:text-primary transition-colors">
+                Formule table d'hôte du midi 3 services
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Potage du moment, plat de résistance au choix du chef et mignardise gourmande. Apportez votre vin !
+              </p>
+<div class="flex flex-wrap gap-space-xs mt-space-sm">
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium">Sur place</span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium">Formule gourmande</span>
+<span class="px-space-xs py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Apportez votre vin</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant line-through">Régulier 24,00 $</span>
+<span class="font-title-md text-title-md text-primary font-extrabold">14,95 $ <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/ pers.</span></span>
+</div>
+<button class="px-space-lg py-space-sm rounded-xl font-label-lg text-label-lg bg-secondary-container text-on-primary font-bold hover:opacity-95 shadow-sm transition-all" onclick="openOfferModal('Bistro Le Coup Monté', 'Formule table d\'hôte du midi 3 services', 'MIDI 14,95 $', 'CODE: MIDICOUP14')">
+                Voir l'offre
+              </button>
+</div>
+</div>
+</article>
+<!-- VEDETTE 3: No.900 50% sur la 2e pizza -->
+<article class="group bg-surface-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Authentic Neapolitan pizza Margherita baked in wood fired oven with blistering leopard crust, fresh fior di latte mozzarella, fragrant basil leaves and san marzano tomato sauce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2IlfwUMvYyhzbDd_hDH7a4qnsq9jqJTPp3M0L7eEv7qUcTpwYzF5dNf2aULq0CqpoZvokijvdkt8C8Vwxp24b5AYC1SUMvDlIi6ovjqMnQbWn3rvcRmmJGXhOJi2fuBQit1VUrENWPsZAxYAxdpzYtDb2J0lcbJLebUz-d3Rk4J79OoslSuSEjtwhgFgFuwuBEUj6h26ggKbuX_s9uny0onzyy6d4OJqiUCL6CjYkJGykVGutXqewYg">
+<div class="absolute top-space-sm left-space-sm flex flex-col gap-1 items-start">
+<span class="px-space-sm py-1 rounded-md bg-secondary-container text-on-primary font-display-lg text-[22px] font-extrabold tracking-tight shadow-md leading-none">
+                -50 % SUR LA 2E
+              </span>
+<span class="px-space-xs py-0.5 rounded-md bg-promo-exclusive text-on-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">local_pizza</span> Tradition Napolitaine
+              </span>
+</div>
+<button aria-label="Favori" class="absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-card/90 backdrop-blur-md text-on-surface-variant hover:text-error flex items-center justify-center shadow-sm transition-transform active:scale-90" onclick="toggleFav(this)">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-space-xs left-space-sm px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-promo-urgent">hourglass_top</span>
+<span class="">Expire dans 2 jours</span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Pizzeria No.900</span>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-surface-container px-2 py-0.5 rounded-md">Montréal · 800 m</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold tracking-tight group-hover:text-primary transition-colors">
+                50 % de rabais sur la 2e pizza artisanale
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Cuite 90 secondes au four à bois. Valide sur toute la carte napolitaine certifiée AVPN.
+              </p>
+<div class="flex flex-wrap gap-space-xs mt-space-sm">
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium">Pour emporter &amp; Sur place</span>
+<span class="px-space-xs py-0.5 rounded-md bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium">Rapide</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Économisez env.</span>
+<span class="font-title-md text-title-md text-secondary font-extrabold">~ 11,50 $ <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">de rabais</span></span>
+</div>
+<button class="px-space-lg py-space-sm rounded-xl font-label-lg text-label-lg bg-secondary-container text-on-primary font-bold hover:opacity-95 shadow-sm transition-all" onclick="openOfferModal('Pizzeria No.900', '50 % de rabais sur la 2e pizza artisanale', '-50 %', 'CODE: PIZZA50NO900')">
+                Voir l'offre
+              </button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 4. LISTE PRINCIPALE DES PROMOTIONS (CARTES COMPACTES & HIÉRARCHISÉES) -->
+<section class="py-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">
+            Toutes les promotions à Montréal
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Mis à jour il y a 8 minutes · Classées selon tes préférences gourmandes
+          </p>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-success-green"></span>
+<span class="">48 offres en vigueur aujourd'hui</span>
+</div>
+</div>
+<!-- Main Responsive Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md" id="promosGrid">
+<!-- CARTE 4: Gaspar 5 à 7 Cocktail 7$ -->
+<article class="promo-card group bg-surface-card rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="today">
+<div class="flex gap-space-md">
+<div class="relative w-28 h-28 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Artisanal gin cocktail with rosemary and fresh grapefruit slice garnished with ice in an upscale Old Montreal tavern bar setting with fresh oyster platter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYjLfJ_jsK67A9jF0eDwhK9YT74dWJZ82ynO3sprpnwhQmJvJNixG5RJu8o35Os6guKU6L1sS8Kkl2nVTjnwRFVlMcmWaK_p1hyU5g06WmJjkujCZLle8ILBX6zdAszm8qGOPwcpfEXpa2r491a6mUnBK47tBaqijiUJhr2J1kzRZUvyN83RYxa7o-CjrI6rQiHkjm943sZ_zuZMiO7oWeKcUrR692ElJ5Pb_wD4TLeCHWMv1WBEuOeQ">
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-secondary-container text-on-primary font-label-sm text-label-sm font-bold">
+                7 $
+              </span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-sm text-label-sm text-primary font-bold truncate">Taverne Gaspar</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">3,1 km</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-snug line-clamp-1 group-hover:text-primary transition-colors">
+                  Cocktail signature à 7 $ &amp; Huîtres 1 $
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+                  Happy Hour 5 à 7 du mercredi au vendredi. Huîtres de l'Atlantique fraîchement écaillées.
+                </p>
+</div>
+<div class="flex items-center gap-space-xs mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">5 à 7</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Vieux-Montréal</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event_available</span> Expire le 30 septembre
+            </span>
+<button class="font-label-md text-label-md text-primary font-bold hover:text-secondary-container inline-flex items-center gap-1" onclick="openOfferModal('Taverne Gaspar', 'Cocktail signature à 7 $ &amp; Huîtres 1 $', '7 $ Cocktail', 'CODE: GASPAR5A7')"><span class="">Voir l'offre</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</article>
+<!-- CARTE 5: St-Hubert Repas enfant gratuit -->
+<article class="promo-card group bg-surface-card rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="freebie">
+<div class="flex gap-space-md">
+<div class="relative w-28 h-28 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Famous Quebec rotisserie roasted chicken plate with crispy golden fries, coleslaw, dipping sauce and colorful kids meal dessert in a lively family restaurant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWs7spj5MtAhcSE_tY76RVugjCgCbrfF4KnNV7r7f-IDdAcc7G8PTpSDkJkZcFaqScp1-L5MhGghtgQXv_u-0nh0IRRkaEWCqol0YcmgwUo3wfzS4pINJxcDuL_TQk5Xhw4WhXfWqvKa3DzIz5pdFZPsM3bhCB33fdkP3Y9Uql5e-J0GJo038Ajx9b2Ax-N04oXuXh0M8pmDgrLj2OVURQ4Ywv4cA0uBhpGBBb8b8MI6T-Frc54JDqLg">
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-success-green text-on-primary font-label-sm text-label-sm font-bold">
+                GRATUIT
+              </span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-sm text-label-sm text-primary font-bold truncate">St-Hubert Plateau</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">1,5 km</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-snug line-clamp-1 group-hover:text-primary transition-colors">
+                  Repas enfant gratuit
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+                  Un repas pour enfant de 9 ans et moins offert à l'achat d'un repas adulte régulier en salle à manger.
+                </p>
+</div>
+<div class="flex items-center gap-space-xs mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Famille</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Sur place</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span> Valide les dimanches
+            </span>
+<button class="font-label-md text-label-md text-primary font-bold hover:text-secondary-container inline-flex items-center gap-1" onclick="openOfferModal('St-Hubert Plateau', 'Repas enfant gratuit le dimanche', 'ENFANT GRATUIT', 'CODE: STHUBKIDS')"><span class="">Voir l'offre</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</article>
+<!-- CARTE 6: Juliette & Chocolat -25% emporter -->
+<article class="promo-card group bg-surface-card rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="exclusive">
+<div class="flex gap-space-md">
+<div class="relative w-28 h-28 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Decadent gourmet melted chocolate fondue bowl with strawberries, marshmallows, chocolate brownies and takeaway gift packaging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCYtssm3zCi6KTNvtFFWlRiBXEharZ2o0f9x1Crti89ulHk4PWCmz0SZjQCmcccR3Z1E6hewK5iCePuCsnMjbKGcQMwScu_UiiKVW4XpAfHmt0uh7D1GJPyPtjXo0eO6Mj6oYqMrEasdfWmeaSI4k0Ru35GLB3abR8KMMw9nEoVTtLNbfS5l4N2S9YIw051oYRjv7hYz8M7ytMUGnmMs2e0uYFCVFNst5riB4oQZTnUH7Bwf8u_-FzwQ">
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-promo-exclusive text-on-primary font-label-sm text-label-sm font-bold">
+                -25 %
+              </span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-sm text-label-sm text-primary font-bold truncate">Juliette &amp; Chocolat</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">2,0 km</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-snug line-clamp-1 group-hover:text-primary transition-colors">
+                  25 % de rabais pour emporter
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+                  Sur toute commande à emporter passée en ligne : brownies, crêpes et chocolats chauds onctueux.
+                </p>
+</div>
+<div class="flex items-center gap-space-xs mt-2">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Exclusif REL</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Pour emporter</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">confirmation_number</span> Code promo requis
+            </span>
+<button class="font-label-md text-label-md text-primary font-bold hover:text-secondary-container inline-flex items-center gap-1" onclick="openOfferModal('Juliette &amp; Chocolat', '25 % de rabais pour emporter en ligne', '-25 %', 'CODE: RELCHOCO25')"><span class="">Voir l'offre</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</article>
+<!-- CARTE 7: Bar à Vin Le Rosé - Forfait dégustation 49$ -->
+<article class="promo-card group bg-surface-card rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="week">
+<div class="flex gap-space-md">
+<div class="relative w-28 h-28 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Charcuterie and Quebec artisan cheese board with grapes, toasted sourdough baguette, walnuts and two glasses of chilled natural rose wine in a cozy Montreal wine bar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_dhOAxZ4FuWyOYPnKZWKoLSpdiUQQa5oKRX_SIUTMigOuxg-SCzFhgfXC1h6bK7YgSDqvDHKUZIB0BM_qsGZNQLyyE8tshQtSdrh9_CgkT92GFy9hX3LTjC-EqkbZeBXbqwdF9jESJ2bVbQsRw0LN9kW4tDRsBcpwqYenU41l4j5liYy8JRQ4KLgycjKQMdz39MzxMEypvtKLTMc0A49m7OeRrbPr6e9nFsuFCpBvDbcvvQSSNVQl6w">
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-secondary-container text-on-primary font-label-sm text-label-sm font-bold">
+                49 $ <span class="text-[9px] font-normal">au lieu de 75$</span>
+</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-sm text-label-sm text-primary font-bold truncate">Bar à Vin Le Rosé</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">1,9 km</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-snug line-clamp-1 group-hover:text-primary transition-colors">
+                  Forfait dégustation 2 personnes
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+                  Plateau généreux charcuteries &amp; fromages québécois avec deux verres d'importation privée.
+                </p>
+</div>
+<div class="flex items-center gap-space-xs mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Soirée duo</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Vins nature</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event</span> Jusqu'au 15 octobre
+            </span>
+<button class="font-label-md text-label-md text-primary font-bold hover:text-secondary-container inline-flex items-center gap-1" onclick="openOfferModal('Bar à Vin Le Rosé', 'Forfait dégustation 2 personnes à 49 $', '49 $ DUO', 'CODE: ROSEDUO49')"><span class="">Voir l'offre</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</article>
+<!-- CARTE 8: Trattoria Da Vinci - Tiramisu offert -->
+<article class="promo-card group bg-surface-card rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="freebie">
+<div class="flex gap-space-md">
+<div class="relative w-28 h-28 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Traditional classic Italian espresso tiramisu slice dusted with rich cocoa powder and fresh mint leaves on a white ceramic plate in an authentic Italian trattoria" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATKGO4DIBAAWY0_i3jCAFmCCAa_Pu5guAnfztsEfpK8j_cFJyLiWExoLcYmHQbnUV-bmuTvl5gU9Kg9CeFGn9mIxu230YXzEDq2KegkjK_1yFCEzHQtbPhORcvvhIZI3KiTort4PU32EG0Di0egwraLF_oHV5GK1bTnve4iyVKr5D1BadFp83oC2dbSE0MbmJtkEANS84rUTnmFt7Poz5KhZaGpE-ps9zuCoKQK_Ycvl_QWfRtz4XNKg">
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-tertiary-container text-on-tertiary font-label-sm text-label-sm font-bold">
+                DESSERT OFFERT
+              </span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-sm text-label-sm text-primary font-bold truncate">Trattoria Da Vinci</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">2,7 km</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-snug line-clamp-1 group-hover:text-primary transition-colors">
+                  Tiramisu maison offert dès 30 $ d'achat
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+                  Recette secrète de la Nonna préparée chaque matin avec mascarpone frais et café espresso.
+                </p>
+</div>
+<div class="flex items-center gap-space-xs mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Italien</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Sur place &amp; Emporter</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">alarm</span> Valide jusqu'à samedi
+            </span>
+<button class="font-label-md text-label-md text-primary font-bold hover:text-secondary-container inline-flex items-center gap-1" onclick="openOfferModal('Trattoria Da Vinci', 'Tiramisu maison offert dès 30 $ d\'achat', 'TIRAMISU OFFERT', 'CODE: DAVINCISWEET')"><span class="">Voir l'offre</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</article>
+<!-- CARTE 9: L'Avenue Brunch - 15 $ de rabais -->
+<article class="promo-card group bg-surface-card rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="under20">
+<div class="flex gap-space-md">
+<div class="relative w-28 h-28 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Epic gourmet brunch plate with eggs benedict drizzled with hollandaise sauce, crispy bacon, duck confit potatoes, fresh berries and thick brioche french toast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpTsPhnqumSZAMzbuTDW97d8LCKTQCvRcG5yJE7E_i9jP0jNgw5_TL14guBXuK9BHchciSd7J3-qdd3wrJJD27beggmKNQXpcPKJbFjkYFwLmmcfOVMxejw7fS17mYCK39IFFF1sFh77FfQNRksKoabe5OQP5D_vPRXGWTFnImn7ccCa3kWYee3eSRWwRIipulE7BCgfHWvsH2WYYyxHlqoa6pPUB1G89ej4GC3JKio1Rx9qtM60r0sg">
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-secondary-container text-on-primary font-label-sm text-label-sm font-bold">
+                -15 $ RABAIS
+              </span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-sm text-label-sm text-primary font-bold truncate">L'Avenue Brunch</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">1,1 km</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-snug line-clamp-1 group-hover:text-primary transition-colors">
+                  15 $ de réduction sur commande brunch
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+                  Valable sur toute commande de groupe ou traiteur brunch à partir de 50 $ minimum d'achat.
+                </p>
+</div>
+<div class="flex items-center gap-space-xs mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Brunch culte</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Plateau Mont-Royal</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-promo-urgent font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Expire bientôt
+            </span>
+<button class="font-label-md text-label-md text-primary font-bold hover:text-secondary-container inline-flex items-center gap-1" onclick="openOfferModal('L\'Avenue Brunch', '15 $ de réduction sur votre première commande brunch', '-15 $', 'CODE: AVENUE15')"><span class="">Voir l'offre</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</article>
+</div>
+<!-- Empty State Container (Toggled via interactive switcher) -->
+<div class="hidden w-full bg-surface-card rounded-xl p-space-xl text-center flex-col items-center justify-center my-space-md shadow-sm" id="emptyStateView">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[42px]">search_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+          Aucune promotion trouvée près de chez toi pour le moment
+        </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mt-space-xs">
+          Nous n'avons pas d'offres actives dans ce rayon exact de 10 km, mais plusieurs excellents restos t'attendent à proximité.
+        </p>
+<div class="flex flex-wrap items-center justify-center gap-space-sm mt-space-lg">
+<button class="px-space-lg py-space-sm rounded-xl font-label-lg text-label-lg bg-secondary-container text-on-primary font-bold shadow-sm hover:opacity-95" onclick="document.getElementById('postalInput').value='Montréal, QC'; switchStateTab('main'); showToast('Rayon élargi à 25 km');" type="button">
+            Élargir ma recherche (25 km)
+          </button>
+<button class="px-space-lg py-space-sm rounded-xl font-label-lg text-label-lg bg-surface-container text-primary font-bold hover:bg-surface-container-high" onclick="scrollToNewsletter()" type="button">
+            Me prévenir des nouvelles offres
+          </button>
+</div>
+</div>
+<!-- Denied Location State Container -->
+<div class="hidden w-full bg-surface-card rounded-xl p-space-xl text-center flex-col items-center justify-center my-space-md shadow-sm" id="geoDeniedView">
+<div class="w-16 h-16 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[36px]">location_disabled</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+          Géolocalisation bloquée ou non autorisée
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-space-xs">
+          Pas de souci ! Tu peux sélectionner manuellement ton quartier préféré ou entrer ton code postal québécois.
+        </p>
+<div class="flex flex-wrap justify-center gap-space-xs mt-space-md">
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-primary hover:text-on-primary transition-colors" onclick="selectQuickDistrict('Montréal - Plateau-Mont-Royal')">Plateau Mont-Royal</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-primary hover:text-on-primary transition-colors" onclick="selectQuickDistrict('Montréal - Vieux-Montréal')">Vieux-Montréal</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-primary hover:text-on-primary transition-colors" onclick="selectQuickDistrict('Québec - Vieux-Port')">Québec (Vieux-Port)</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-primary hover:text-on-primary transition-colors" onclick="selectQuickDistrict('Laval - Centropolis')">Laval (Centropolis)</button>
+</div>
+</div>
+<!-- Urgent Expiring Today Alert Banner View (Simulated) -->
+<div class="hidden w-full bg-promo-urgent/10 rounded-xl p-space-md mb-space-md flex-col md:flex-row items-start md:items-center justify-between gap-space-md shadow-sm" id="urgentStateView">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-promo-urgent text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">crisis_alert</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-extrabold flex items-center gap-2">
+<span class="">Mode Urgence : 14 promotions expirent ce soir à minuit !</span>
+<span class="px-2 py-0.5 rounded-full bg-promo-urgent text-on-primary text-[10px] font-bold">DERNIÈRE CHANCE</span>
+</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Ne passe pas à côté : présente le code sur place avant la fermeture des cuisines ce soir.
+            </p>
+</div>
+</div>
+<button class="whitespace-nowrap px-space-md py-space-xs rounded-xl bg-promo-urgent text-on-primary font-label-md text-label-md font-bold hover:opacity-90" onclick="switchStateTab('main')">
+          Voir les 14 offres urgentes
+        </button>
+</div>
+</section>
+<!-- 5. MODULE REL HIGHLIGHT (INSCRIPTION NEWSLETTER LOCALE DU JEUDI) -->
+<section class="py-space-lg w-full" id="newsletterSection">
+<div class="relative overflow-hidden w-full bg-surface-container rounded-2xl p-space-lg lg:p-space-xl shadow-md">
+<!-- Subtle radial glow decoration inside card -->
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 bg-secondary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl mx-auto flex flex-col gap-space-md text-center md:text-left">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex-1">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-card text-primary font-label-sm text-label-sm font-bold mb-space-xs shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">mail</span>
+                L'Infolettre du Jeudi Midi
+              </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary font-extrabold tracking-tight">
+                💌 10 bons plans resto près de chez toi, chaque jeudi matin
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-2xl">
+                Reçois une sélection personnalisée de promotions secrètes, concours et tables d'hôte selon ton code postal. Zéro spam, 100 % gourmandise locale.
+              </p>
+</div>
+<!-- Social proof micro avatar pile -->
+<div class="shrink-0 flex flex-col items-center md:items-end">
+<div class="flex -space-x-2 overflow-hidden mb-1">
+<div class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-card bg-primary text-on-primary flex items-center justify-center font-bold text-[11px]">MTL</div>
+<div class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-card bg-secondary-container text-on-primary flex items-center justify-center font-bold text-[11px]">QBC</div>
+<div class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-card bg-tertiary-container text-on-tertiary flex items-center justify-center font-bold text-[11px]">LAV</div>
+<div class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-card bg-primary-container text-on-primary flex items-center justify-center font-bold text-[11px]">+45k</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">45 000+ foodies québécois</span>
+</div>
+</div>
+<!-- Subscription Form -->
+<form class="mt-space-sm grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm" onsubmit="handleNewsletter(event)">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant font-semibold mb-1" for="newsletterName">Ton prénom</label>
+<input class="w-full bg-surface-card px-space-md py-space-sm rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none shadow-sm" id="newsletterName" placeholder="Ex: Camille" required="" type="text">
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant font-semibold mb-1" for="newsletterEmail">Ton courriel gourmand</label>
+<input class="w-full bg-surface-card px-space-md py-space-sm rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none shadow-sm" id="newsletterEmail" placeholder="camille@exemple.ca" required="" type="email">
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant font-semibold mb-1" for="newsletterPostal">Code postal (3 ou 6 car.)</label>
+<input class="w-full bg-surface-card px-space-md py-space-sm rounded-xl font-body-md text-body-md text-on-surface font-semibold placeholder:text-outline focus:outline-none shadow-sm uppercase" id="newsletterPostal" placeholder="ex: H2X 1Y4" required="" type="text" value="H2X 1Y4">
+</div>
+<div class="flex items-end">
+<button class="w-full py-space-sm px-space-md rounded-xl font-label-lg text-label-lg bg-secondary-container text-on-primary font-bold hover:opacity-95 shadow-sm transition-all flex items-center justify-center gap-1" type="submit">
+<span class="">Recevoir mes Highlights</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</form>
+<div class="flex flex-wrap items-center justify-center md:justify-start gap-space-md pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-success-green">check_circle</span>
+              Désabonnement en 1 clic à tout moment
+            </span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-success-green">shield</span>
+              Données hébergées au Québec, aucun partage commercial
+            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. PAGINATION & COMPTEUR -->
+<section class="py-space-md flex flex-col items-center justify-center gap-space-md">
+<div class="text-center">
+<span class="font-label-md text-label-md text-on-surface-variant">
+          Affichage de <strong class="text-on-surface">6 promotions</strong> sur 48 disponibles à Montréal
+        </span>
+<div class="w-64 h-1.5 bg-surface-container rounded-full mx-auto mt-2 overflow-hidden">
+<div class="w-1/6 h-full bg-primary rounded-full"></div>
+</div>
+</div>
+<button class="px-space-xl py-space-sm rounded-xl font-label-lg text-label-lg bg-surface-card text-primary font-bold shadow-sm hover:bg-surface-container flex items-center gap-space-xs transition-all" onclick="loadMorePromos(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+<span class="">Afficher 12 promotions supplémentaires</span>
+</button>
+<!-- Numbered keyboard accessible pagination -->
+<nav aria-label="Pagination des promotions" class="flex items-center gap-1">
+<button aria-label="Page précédente" class="w-9 h-9 rounded-lg flex items-center justify-center bg-surface-card text-on-surface-variant hover:bg-surface-container disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button aria-current="page" class="w-9 h-9 rounded-lg flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md font-bold">1</button>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center bg-surface-card text-on-surface font-label-md text-label-md font-bold hover:bg-surface-container" onclick="changePage(2)">2</button>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center bg-surface-card text-on-surface font-label-md text-label-md font-bold hover:bg-surface-container" onclick="changePage(3)">3</button>
+<span class="px-2 font-label-md text-label-md text-on-surface-variant">...</span>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center bg-surface-card text-on-surface font-label-md text-label-md font-bold hover:bg-surface-container" onclick="changePage(5)">5</button>
+<button aria-label="Page suivante" class="w-9 h-9 rounded-lg flex items-center justify-center bg-surface-card text-on-surface-variant hover:bg-surface-container" onclick="changePage(2)">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</nav>
+</section>
+<!-- 7. BLOC INSTAGRAM REL DE MARQUE -->
+<section class="py-space-md w-full" id="instagramCommunitySection"><div class="relative overflow-hidden w-full rounded-2xl p-space-md lg:p-space-lg border shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md bg-primary border-transparent"><div class="absolute -right-10 -top-10 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div><div class="flex items-start md:items-center gap-space-md flex-1 relative z-10"><div class="w-12 h-12 rounded-xl bg-on-primary/20 text-on-primary flex items-center justify-center shrink-0 border border-on-primary/20 shadow-sm"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></div><div class="flex flex-col"><div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-on-primary/20 text-tertiary-fixed-dim text-[11px] uppercase tracking-wider font-extrabold mb-1 self-start"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span><span class="">Communauté Instagram @restoenlignecom</span></div><h3 class="font-title-md text-title-md text-on-primary font-extrabold">Retrouvez les coulisses et concours gourmands du Québec</h3><p class="font-body-sm text-body-sm text-primary-fixed-dim max-w-xl mt-0.5">Stories quotidiennes, tirages de cartes-cadeaux de 100 $ chaque semaine et recommandations de chefs locaux.</p></div></div><div class="flex items-center gap-space-sm shrink-0 w-full md:w-auto justify-between md:justify-end relative z-10"><div class="hidden lg:flex items-center -space-x-2 mr-space-xs"><img class="w-9 h-9 rounded-full object-cover border-2 border-surface-card shadow-sm" data-alt="Aperçu foodie Instagram RestoEnLigne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcIrzPjhxDFoRxSsiq17ldpg7FHrTEwR2d53S1UNUBbhludQbAncBW0f-KFfjmkC3LSks6jYMKFfS8nFRMvR1EqnCEfg_qmj_QAMaHgQ7fpKt2txPT4zLNPIOxYJ579MGClJpU0VCMX0_uPewsmni6ezTvRJCj59kIiVoDMkjKtS06t41KNzgy-aJvX2N_RQ9ajKgJO3XW3bV9Vxwv6F7xVCfSun4psgxtxYYPtu0FoGWlGIOT9-qqYg"><img class="w-9 h-9 rounded-full object-cover border-2 border-surface-card shadow-sm" data-alt="Aperçu cocktail Instagram RestoEnLigne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdNZDte1RKif7OJrMsSawPWnPKLMf3E7yD6n9wD5RrcRBegfYh1pD8ICiVDVVwo7SUA8XgGfZn5eVrIYdYpCHeQ8JX25j_pUNRn_wxPXHphWrFdyOU_xiLMciIQu-1ihRFYiNXxpcMNX7GucTc2lt8wG7mbiGSN-JoN0YtxQ_U1yzS4FginkH-Mw2Wi6NU6l2IKjKT83T04-7aXUbIq83TQ7z23OBMC4bb1pDxtQnTuJ8DWAFoXsdjcQ"><img class="w-9 h-9 rounded-full object-cover border-2 border-surface-card shadow-sm" data-alt="Aperçu pizza Instagram RestoEnLigne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW46ysfeYft0KRzhjJ6DfV_V9sREYGT67rz6i0KotepyFdZGqN93BoSYO6Ik48O5IVtFT8e1xA3vvOOnBH61FAULrzNf4I7BnOrVq6H7mcssqGVdSbLgTqgGTA6KUlF-MhJHBbLSrw78obCYrpmq6YvcM4YBd1CkP5P0thgJvMbxtB7U39s5S-ka2Q-4mDXcvqnH304P1jxdXaDEXnaF5jt_sE9EI4Qt8AU4-JVO6BF2CnrsJLR8dkfQ"></div><a class="px-space-md py-space-sm rounded-xl bg-surface-card text-primary hover:bg-surface-container font-label-md text-label-md font-bold transition-all shadow-md hover:shadow-lg inline-flex items-center gap-space-xs whitespace-nowrap" href="https://instagram.com/restoenlignecom" rel="noopener noreferrer" target="_blank"><span class="">Suivre @restoenlignecom</span><span class="material-symbols-outlined text-[18px]">open_in_new</span></a></div></div></section>
+<!-- 6. BANDEAU DE CONSULTATION INTERACTIVE DES ÉTATS (TABS / SWITCHER DES ÉTATS REL) -->
+<!-- Positioned cleanly at bottom of layout as specified to allow live review of required states -->
+<section class="py-space-lg w-full border-t border-transparent">
+<div class="w-full bg-surface-card rounded-2xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold tracking-tight">
+              Simulateur interactif des états (Spécifications RestoEnLigne)
+            </h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+            Cliquez sur un état pour tester les vues métier requises
+          </span>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<button class="state-tab-btn px-space-md py-space-xs rounded-xl font-label-md text-label-md font-bold bg-primary text-on-primary shadow-sm" id="stateBtn-main" onclick="switchStateTab('main')" type="button">
+            Vue Principale (48 Actives)
+          </button>
+<button class="state-tab-btn px-space-md py-space-xs rounded-xl font-label-md text-label-md font-semibold bg-surface-container text-on-surface hover:bg-surface-container-high" id="stateBtn-empty" onclick="switchStateTab('empty')" type="button">
+            État Vide (0 Trouvée)
+          </button>
+<button class="state-tab-btn px-space-md py-space-xs rounded-xl font-label-md text-label-md font-semibold bg-surface-container text-on-surface hover:bg-surface-container-high flex items-center gap-1" id="stateBtn-urgent" onclick="switchStateTab('urgent')" type="button">
+<span class="w-2 h-2 rounded-full bg-promo-urgent"></span>
+<span class="">Alerte Urgence (Expire ce soir)</span>
+</button>
+<button class="state-tab-btn px-space-md py-space-xs rounded-xl font-label-md text-label-md font-semibold bg-surface-container text-on-surface hover:bg-surface-container-high" id="stateBtn-denied" onclick="switchStateTab('denied')" type="button">
+            Localisation Refusée
+          </button>
+<button class="state-tab-btn px-space-md py-space-xs rounded-xl font-label-md text-label-md font-semibold bg-surface-container text-primary hover:bg-primary-fixed flex items-center gap-1" id="stateBtn-mobileSimulation" onclick="switchStateTab('mobileSimulation')" type="button">
+<span class="material-symbols-outlined text-[16px]">smartphone</span>
+<span class="">Aperçu Mobile-First iPhone</span>
+</button>
+</div>
+<!-- Simulated Mobile-First Viewport Frame (Initially Hidden) -->
+<div class="hidden pt-space-md" id="mobileSimulationContainer">
+<div class="max-w-[400px] mx-auto bg-surface-card rounded-[2.5rem] p-4 shadow-2xl border-4 border-surface-container-highest">
+<!-- Mobile device header mimic -->
+<div class="flex justify-between items-center px-4 pt-2 pb-3 font-label-sm text-label-sm text-on-surface font-bold">
+<span class="">9:41</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[14px]">wifi</span>
+<span class="material-symbols-outlined text-[14px]">battery_full</span>
+</div>
+</div>
+<!-- Mobile simulated sticky top bar -->
+<div class="bg-surface-card rounded-xl p-space-xs shadow-sm mb-3">
+<div class="flex items-center gap-1 text-[12px] font-bold text-primary px-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">near_me</span>
+<span class="">Montréal (H2X 1Y4) · 10 km</span>
+</div>
+</div>
+<!-- Compact mobile thumb-friendly stacked cards -->
+<div class="space-y-3 max-h-[480px] overflow-y-auto pr-1">
+<!-- Mini Card 1 -->
+<div class="bg-surface-container-low rounded-2xl p-2.5 flex gap-2.5 items-center shadow-sm">
+<div class="w-16 h-16 rounded-xl overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Steaming artisan ramen with savory broth and egg in bowl for mobile app screen preview" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9EvGRxi-8c1LICq998bdGs4sj_t-TapXBjgeKgTCaskK9mob-Ni4voDVLEiLHMBCyfnbUL_Gzry6t1URxb-T7OJ0GBBBw1ePzhGM6gvzcv8rwh5bABt4XCGqc9boVsGMOh0gnX6pjU5hd-0-LHqp6eYo0qNzd5GbvHYXYc_kV5KrZ1N9yyZAoEQ7SYMVNTaeMM8BsHXN_FoaefYDxNjJp-_Dq03Fvj4nPMG0Gsqppm0H40vfxb-oY3g">
+<span class="absolute top-0 left-0 bg-secondary-container text-on-primary text-[9px] font-extrabold px-1 py-0.2 rounded-br">2P1</span>
+</div>
+<div class="flex-1 min-w-0">
+<span class="text-[11px] font-bold text-primary block">Kinton Ramen · 1,2 km</span>
+<div class="text-[13px] font-extrabold text-on-surface truncate">2 Ramens Signature pour 1</div>
+<div class="text-[11px] text-secondary font-bold">19,95 $ <span class="line-through text-on-surface-variant font-normal">39,90$</span></div>
+</div>
+<button class="w-8 h-8 rounded-full bg-secondary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Mini Card 2 -->
+<div class="bg-surface-container-low rounded-2xl p-2.5 flex gap-2.5 items-center shadow-sm">
+<div class="w-16 h-16 rounded-xl overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Classic wood fired pizza margherita slice on rustic wooden board" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW46ysfeYft0KRzhjJ6DfV_V9sREYGT67rz6i0KotepyFdZGqN93BoSYO6Ik48O5IVtFT8e1xA3vvOOnBH61FAULrzNf4I7BnOrVq6H7mcssqGVdSbLgTqgGTA6KUlF-MhJHBbLSrw78obCYrpmq6YvcM4YBd1CkP5P0thgJvMbxtB7U39s5S-ka2Q-4mDXcvqnH304P1jxdXaDEXnaF5jt_sE9EI4Qt8AU4-JVO6BF2CnrsJLR8dkfQ">
+<span class="absolute top-0 left-0 bg-promo-urgent text-on-primary text-[9px] font-extrabold px-1 py-0.2 rounded-br">-50%</span>
+</div>
+<div class="flex-1 min-w-0">
+<span class="text-[11px] font-bold text-primary block">Pizzeria No.900 · 800m</span>
+<div class="text-[13px] font-extrabold text-on-surface truncate">50% sur 2e pizza au feu de bois</div>
+<div class="text-[11px] text-on-surface-variant">Expire dans 2 jours</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-secondary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Mini Card 3 -->
+<div class="bg-surface-container-low rounded-2xl p-2.5 flex gap-2.5 items-center shadow-sm">
+<div class="w-16 h-16 rounded-xl overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Refreshing artisan cocktail glass on wooden tavern counter in old montreal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAREZ95M2TM2r_uNOlPphUS7cJSPu4pBtADMClsQ5w9aVd7vkB7ztPTOIgeIUT9801akk503mVFR87MaUIj2YdxZdRPyqyval6tsK7tyPS0tzBcxSvFisH0jBda80Xg4ys5u1EjQgXRvATR4wVKiHvfWJzzeKsmg85qd4E2t-93tJfanHTD6yIJQoE9b7O25AItGwmS4zABRe1lbiVr9STozxDHTg3zWHQTlgf2jl37cY68t4AbJu7qpw">
+<span class="absolute top-0 left-0 bg-primary-container text-on-primary text-[9px] font-extrabold px-1 py-0.2 rounded-br">7$</span>
+</div>
+<div class="flex-1 min-w-0">
+<span class="text-[11px] font-bold text-primary block">Taverne Gaspar · 3,1 km</span>
+<div class="text-[13px] font-extrabold text-on-surface truncate">Cocktail 7$ &amp; Huîtres 1$</div>
+<div class="text-[11px] text-primary font-bold">5 à 7 gourmand</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-secondary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="text-center pt-3">
+<span class="font-label-sm text-label-sm text-primary font-bold">Vue Mobile Réactive optimisée pour un pouce</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- MODAL 1: DÉTAIL D'OFFRE & CODE PROMO (Accessible, Clôturable) -->
+<div class="fixed inset-0 z-50 hidden bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-space-md" id="offerModal">
+<div class="bg-surface-card rounded-2xl max-w-lg w-full p-space-lg shadow-2xl relative flex flex-col gap-space-md animate-in fade-in zoom-in duration-200">
+<button aria-label="Fermer la fenêtre" class="absolute top-space-md right-space-md w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high" onclick="closeOfferModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="font-label-md text-label-md text-primary font-bold" id="modalRestaurant">Restaurant</span>
+</div>
+<div>
+<span class="inline-block px-space-sm py-1 rounded-md bg-secondary-container text-on-primary font-display-lg text-[20px] font-extrabold tracking-tight mb-space-xs" id="modalBadge">RABAIS</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold" id="modalTitle">Offre spéciale</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Présentez ce coupon numérique sur votre téléphone ou mentionnez ce code exclusif au serveur lors de votre commande.
+        </p>
+</div>
+<!-- Coupon code clip box -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Ton code exclusif RestoEnLigne</span>
+<span class="font-headline-md text-headline-md font-mono text-primary font-bold tracking-widest" id="modalCode">KINTON2X1</span>
+</div>
+<button class="px-space-md py-space-sm rounded-xl font-label-md text-label-md bg-primary text-on-primary font-bold hover:opacity-90 flex items-center gap-1 shadow-sm" id="copyBtn" onclick="copyPromoCode()">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span id="copyBtnText" class="">Copier</span>
+</button>
+</div>
+<div class="space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<p class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-success-green">check</span>
+          Valable immédiatement en salle à manger
+        </p>
+<p class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-success-green">check</span>
+          Sans obligation d'impression papier
+        </p>
+</div>
+<div class="pt-space-xs flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-space-sm rounded-xl font-label-md text-label-md bg-surface-container text-on-surface font-bold hover:bg-surface-container-high" onclick="closeOfferModal()">
+          Fermer
+        </button>
+<button class="px-space-lg py-space-sm rounded-xl font-label-md text-label-md bg-secondary-container text-on-primary font-bold hover:opacity-95 shadow-sm flex items-center gap-1" onclick="bookTableDirect()">
+<span class="">Réserver une table</span>
+<span class="material-symbols-outlined text-[16px]">restaurant</span>
+</button>
+</div>
+</div>
+</div>
+<!-- MODAL 2: TOUS LES FILTRES AVANCÉS -->
+<div class="fixed inset-0 z-50 hidden bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-space-md" id="filterModal">
+<div class="bg-surface-card rounded-2xl max-w-lg w-full p-space-lg shadow-2xl relative flex flex-col gap-space-md max-h-[921px] overflow-y-auto">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">tune</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Filtres avancés</h3>
+</div>
+<button aria-label="Fermer" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high" onclick="toggleFilterModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Distance Slider -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<label class="font-label-md text-label-md text-on-surface font-bold">Rayon de recherche maximal</label>
+<span class="font-label-md text-label-md text-primary font-extrabold" id="radiusLabel">10 km</span>
+</div>
+<input class="w-full accent-primary cursor-pointer" max="50" min="1" oninput="document.getElementById('radiusLabel').innerText = this.value + ' km';" type="range" value="10">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="">1 km</span>
+<span class="">15 km</span>
+<span class="">50 km</span>
+</div>
+</div>
+<!-- Service mode -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-bold mb-space-xs">Type de service</label>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="py-2 px-space-xs rounded-xl bg-primary text-on-primary font-label-sm text-label-sm font-bold text-center" onclick="this.classList.toggle('bg-primary'); this.classList.toggle('text-on-primary'); this.classList.toggle('bg-surface-container');" type="button">Sur place</button>
+<button class="py-2 px-space-xs rounded-xl bg-surface-container text-on-surface font-label-sm text-label-sm font-bold text-center" onclick="this.classList.toggle('bg-primary'); this.classList.toggle('text-on-primary'); this.classList.toggle('bg-surface-container');" type="button">À emporter</button>
+<button class="py-2 px-space-xs rounded-xl bg-surface-container text-on-surface font-label-sm text-label-sm font-bold text-center" onclick="this.classList.toggle('bg-primary'); this.classList.toggle('text-on-primary'); this.classList.toggle('bg-surface-container');" type="button">Livraison</button>
+</div>
+</div>
+<!-- Cuisine Types -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-bold mb-space-xs">Type de cuisine</label>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold cursor-pointer">Tous</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold cursor-pointer hover:bg-surface-container-high">Japonais &amp; Ramen</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold cursor-pointer hover:bg-surface-container-high">Pizzas italiennes</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold cursor-pointer hover:bg-surface-container-high">Bistros &amp; Terroir</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold cursor-pointer hover:bg-surface-container-high">Brunch &amp; Déjeuner</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold cursor-pointer hover:bg-surface-container-high">Tavernes &amp; Bar à vin</span>
+</div>
+</div>
+<!-- Price Range -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-bold mb-space-xs">Fourchette de prix de l'offre</label>
+<div class="grid grid-cols-4 gap-space-xs">
+<button class="py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold">$ (Moins de 15$)</button>
+<button class="py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-bold">$$ (15$ - 25$)</button>
+<button class="py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-bold">$$$ (25$ - 50$)</button>
+<button class="py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-bold">$$$$ (50$+)</button>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between gap-space-sm">
+<button class="font-label-md text-label-md text-on-surface-variant underline" onclick="toggleFilterModal()">
+          Réinitialiser
+        </button>
+<button class="px-space-lg py-space-sm rounded-xl font-label-lg text-label-lg bg-secondary-container text-on-primary font-bold shadow-sm hover:opacity-95" onclick="toggleFilterModal(); showToast('Filtres appliqués avec succès');">
+          Appliquer les filtres (48 résultats)
+        </button>
+</div>
+</div>
+</div>
+<!-- TOAST NOTIFICATION CONTAINER -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-xs font-label-md text-label-md" id="toastNotification">
+<span class="material-symbols-outlined text-[20px] text-success-green">check_circle</span>
+<span id="toastMessage" class="">Action confirmée</span>
+</div>
+<!-- INLINE CLIENT SCRIPT FOR SEAMLESS B2C MICRO-INTERACTIONS -->
+<script>
+    function showToast(message) {
+      const toast = document.getElementById('toastNotification');
+      const text = document.getElementById('toastMessage');
+      if (toast && text) {
+        text.innerText = message;
+        toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 3200);
+      }
+    }
+
+    function toggleFav(btn) {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon) {
+        if (icon.innerText === 'favorite_border') {
+          icon.innerText = 'favorite';
+          icon.style.fontVariationSettings = "'FILL' 1";
+          btn.classList.add('text-error');
+          showToast('Offre ajoutée à tes favoris gourmands');
+        } else {
+          icon.innerText = 'favorite_border';
+          icon.style.fontVariationSettings = "'FILL' 0";
+          btn.classList.remove('text-error');
+          showToast('Offre retirée des favoris');
+        }
+      }
+    }
+
+    function simulateGeoDetection() {
+      const input = document.getElementById('postalInput');
+      const btn = document.getElementById('geoBtn');
+      if (btn) {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin text-primary">progress_activity</span> Recherche...';
+      }
+      setTimeout(() => {
+        if (input) input.value = "Montréal (Plateau-Mont-Royal), QC — H2W 1R7";
+        if (btn) {
+          btn.innerHTML = '<span class="material-symbols-outlined text-[20px] text-success-green">check</span> Détecté !';
+        }
+        showToast("📍 Position détectée : Plateau-Mont-Royal, Montréal");
+        setTimeout(() => {
+          if (btn) {
+            btn.innerHTML = '<span class="material-symbols-outlined text-[20px] text-primary">my_location</span> Utiliser ma position';
+          }
+        }, 2500);
+      }, 700);
+    }
+
+    function triggerFilterUpdate() {
+      const val = document.getElementById('postalInput').value;
+      showToast('Actualisation des promotions pour : ' + (val || 'Montréal'));
+    }
+
+    function setCategoryFilter(category, element) {
+      document.querySelectorAll('.chip-filter').forEach(chip => {
+        chip.classList.remove('bg-primary-container', 'text-on-primary', 'active-chip');
+        chip.classList.add('bg-surface-card', 'text-on-surface');
+      });
+      element.classList.add('bg-primary-container', 'text-on-primary', 'active-chip');
+      element.classList.remove('bg-surface-card', 'text-on-surface');
+
+      const cards = document.querySelectorAll('.promo-card');
+      let visibleCount = 0;
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category || category === 'today') {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+      showToast(visibleCount + ' promotions affichées');
+    }
+
+    function applySort(val) {
+      showToast('Tri mis à jour : ' + val);
+    }
+
+    function toggleFilterModal() {
+      const modal = document.getElementById('filterModal');
+      if (modal) modal.classList.toggle('hidden');
+    }
+
+    function toggleRadiusModal() {
+      toggleFilterModal();
+    }
+
+    function openOfferModal(resto, title, badge, code) {
+      document.getElementById('modalRestaurant').innerText = resto;
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalBadge').innerText = badge;
+      document.getElementById('modalCode').innerText = code.replace('CODE: ', '');
+      document.getElementById('offerModal').classList.remove('hidden');
+      document.getElementById('copyBtnText').innerText = 'Copier';
+    }
+
+    function closeOfferModal() {
+      document.getElementById('offerModal').classList.add('hidden');
+    }
+
+    function copyPromoCode() {
+      const code = document.getElementById('modalCode').innerText;
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(code);
+      }
+      document.getElementById('copyBtnText').innerText = 'Copié !';
+      showToast('Code promo ' + code + ' copié dans le presse-papiers');
+    }
+
+    function bookTableDirect() {
+      closeOfferModal();
+      showToast('Redirection vers le système de réservation du resto...');
+    }
+
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const name = document.getElementById('newsletterName').value;
+      const postal = document.getElementById('newsletterPostal').value;
+      showToast('Merci ' + name + ' ! Ton premier Highlight resto pour ' + postal + ' arrive ce jeudi.');
+      e.target.reset();
+    }
+
+    function scrollToNewsletter() {
+      document.getElementById('newsletterSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function loadMorePromos(btn) {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span> Chargement en cours...';
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span> 12 promotions ajoutées !';
+        showToast('12 promotions supplémentaires chargées');
+        setTimeout(() => {
+          btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">expand_more</span> Afficher les promotions suivantes';
+        }, 2000);
+      }, 600);
+    }
+
+    function changePage(pageNum) {
+      showToast('Navigation vers la page ' + pageNum);
+    }
+
+    function selectQuickDistrict(name) {
+      document.getElementById('postalInput').value = name;
+      switchStateTab('main');
+      showToast('Quartier sélectionné : ' + name);
+    }
+
+    function switchStateTab(state) {
+      // Style buttons
+      document.querySelectorAll('.state-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      const activeBtn = document.getElementById('stateBtn-' + state);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-primary', 'text-on-primary');
+        activeBtn.classList.remove('bg-surface-container', 'text-on-surface');
+      }
+
+      // Hide all dynamic states first
+      const grid = document.getElementById('promosGrid');
+      const emptyView = document.getElementById('emptyStateView');
+      const deniedView = document.getElementById('geoDeniedView');
+      const urgentView = document.getElementById('urgentStateView');
+      const mobileSim = document.getElementById('mobileSimulationContainer');
+
+      grid.classList.remove('hidden');
+      emptyView.classList.add('hidden');
+      deniedView.classList.add('hidden');
+      urgentView.classList.add('hidden');
+      mobileSim.classList.add('hidden');
+
+      if (state === 'main') {
+        // Default standard state
+      } else if (state === 'empty') {
+        grid.classList.add('hidden');
+        emptyView.classList.remove('hidden');
+        emptyView.classList.add('flex');
+      } else if (state === 'denied') {
+        grid.classList.add('hidden');
+        deniedView.classList.remove('hidden');
+        deniedView.classList.add('flex');
+      } else if (state === 'urgent') {
+        urgentView.classList.remove('hidden');
+        urgentView.classList.add('flex');
+        urgentView.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else if (state === 'mobileSimulation') {
+        mobileSim.classList.remove('hidden');
+        mobileSim.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-card shadow-[0_-1px_10px_rgba(0,0,0,0.03)]"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg"><div class="flex flex-col md:flex-row items-center justify-between gap-space-lg pb-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold">RestoEnLigne</span><span class="w-2 h-2 rounded-full bg-secondary-container ml-1"></span></div><p class="font-body-sm text-body-sm text-on-surface-variant">La destination gourmande pour dénicher les meilleures tables du Québec.</p></div><nav class="flex flex-wrap items-center justify-center md:justify-end gap-x-space-lg gap-y-space-sm" data-active-classes="text-primary font-bold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="a-propos" href="#">À propos</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="pour-les-restaurateurs" href="#">Pour les restaurateurs</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="confidentialite" href="#">Confidentialité</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="conditions" href="#">Conditions</a></nav></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-md bg-surface-container-low rounded-xl px-space-md py-space-sm"><div class="flex items-center gap-space-xs font-label-md text-label-md text-primary font-semibold"><span class="material-symbols-outlined text-[16px] text-secondary-container">favorite</span><span class="">Fait avec passion au Québec</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 RestoEnLigne Inc. Tous droits réservés.</p></div></div></footer>
+
+
+
+</body></html>
